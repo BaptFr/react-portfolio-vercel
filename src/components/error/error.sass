@@ -1,0 +1,74 @@
+.error__container
+  width:100%
+  margin: 139px 0px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  gap: 130px
+  color: red
+
+  p
+    margin:0
+    text-align: center
+    
+.error__type
+  width: 100%
+  margin: 0
+  font-size: 270px
+  font-style: normal
+  font-weight: 700
+
+.error__message
+  font-size: 36px
+  font-weight: 500
+
+.home__link
+  margin: 0
+  text-decoration: none
+  text-decoration: none
+  border: none
+  border-bottom: 1px solid black
+  line-height: 19px
+  color: #000
+  font-size: 20px
+  font-weight: 500
+
+
+
+// Media Queries MEDIUM DEVICES
+$breakpoint-medium: 1024px
+@media screen and (max-width: $breakpoint-medium)
+  .error__container
+    margin: 120px 0px
+    gap: 120px
+
+  .error__type
+    font-size: 220px
+
+  .error__message
+    font-size: 36px
+  
+
+
+// Media Queries SMALL DEVICES
+$breakpoint-small: 768px
+@media screen and (max-width: $breakpoint-small)
+  .error__container
+    margin: 113px 0px
+    gap: 100px
+
+  .error__type
+    font-size: 96px
+
+  .error__message
+    font-size: 18px
+    width: 90%
+  
+  .home__link
+    font-size: 15px
+  
+
+
+
+  

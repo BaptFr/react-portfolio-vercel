@@ -1,12 +1,14 @@
 import React from 'react';
+import Error404 from '../../components/error/error-display.jsx'
 
 function NotFound() {
-    return(
-        <div>
-            ERREUR TEST
-        </div>
-
-    )
-}
-
-export default NotFound;
+    return (
+    <>
+      <Error404 />
+    </>
+    );
+  }
+  
+  export default NotFound
+       
+  

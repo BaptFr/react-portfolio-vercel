@@ -1,29 +1,36 @@
 import React from 'react';
-import './layout.css'
+import { NavLink } from 'react-router-dom';
+import './layout.sass';
+import logoCopyright from'../../assets/copyright-white.svg';
 
-function Layout () {
+function Layout({ children }) {
     return (
-        <div className="layout-container">
+        <>
             <header>
-                <div className="name-container">
-                    <p>
-                        Baptiste SALAZAR
-                    </p>
-                </div>
-                <nav className="navbar"> 
-                    LINKS
+                <div className='header__title'>
+                <h1> Baptiste SALAZAR </h1>
+                </div >
+                <nav className='navbar'>
+                    <NavLink to="/" >
+                        <button>Accueil</button>
+                    </NavLink>
+                    <NavLink to="/about" >
+                        <button>Projets</button>
+                    </NavLink>
                 </nav>
             </header>
+            <main>
+                {children}
+            </main>
             <footer>
-                <div className="footer-container">
-                    <p className="footer-copyright">
-                        Conçu par Baptiste Salazar <br/>
-                        - Copyright 2024 - 
-                    </p>
-                </div>   
+                <div className='footer__containt'>
+                    <img src={ logoCopyright } alt="Logo-copyright" /> 2024  <br/>
+                    Tous droits réservés
+                </div>
             </footer>
-        </div>
-    )
+        </>
+    );
+
 }
 
-export default Layout;
+export default Layout
