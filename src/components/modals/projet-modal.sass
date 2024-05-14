@@ -1,0 +1,61 @@
+.modal__wrapper 
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5) // Arrière-plan semi-transparent 
+    backdrop-filter: blur(5px) //Flou
+    z-index: 999 
+
+
+    .modal
+        
+        width: 90%
+        height: 60%
+        display: flex
+        flex-direction: column
+        align-items: center
+        border: 2px solid red
+        border-radius: 15px
+        background-color: #FFFFFF
+
+        #close
+            padding: 15px 20px
+            float: right
+            cursor: pointer
+            margin: 10px
+            font-size: 25px
+            font-weight: 500
+            align-self: flex-end
+            background-color: transparent
+            border: 1px solid #000000
+            border-radius: 50%
+            cursor: pointer
+
+        #close:hover
+            font-weight: 700
+            border: 3px solid black
+
+
+
+        .modal__content
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            padding: 20px
+            border-radius: 5px
+            p
+                color: black
+
+        button
+            padding: 20px
+            border-radius: 30px
+            border: 1px solid  #DEB992
+            

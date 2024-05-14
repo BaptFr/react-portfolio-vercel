@@ -5,7 +5,6 @@ import { Typewriter } from 'react-simple-typewriter';
 import SectionBanner from '../../components/banners/section-banner.jsx';
 import LogosBanner from '../../components/banners/logos-banner.jsx';
 import Button from '../../components/buttons/button.jsx';
-import ProjectCard from'../../components/cards/project-card.jsx';
 import Tableau from '../../components/sections/tableau.jsx';
 
 import LinkedinLogo from '../../assets/logos/linkedin-logo.svg';
@@ -73,45 +72,7 @@ function Home() {
       <LogosBanner />
     </section>
 
-    <section id='projets__section' className='projets__section'>
-      <div className='projets__banner'>
-      <SectionBanner title="PROJETS"/>
-      </div>
-      <div className= 'projets__container--left'>
-        <div className='description__container'>
-          <p className='project__title'> Mon Vieux Grimoire </p>
-          <p className='project__description'>Site web de référencement de livres d'une chaine de librairies où les utilisateurs peuvent ajouter des livres et les évaluer.</p>
-          <div className='project_technologie__container'>
-           <p className='project__technologies__title'>Technologies & outils</p>
-           <p className='project__technologies'> Node.js Express MongoDB</p>
-          </div>
-       </div>
-       <ProjectCard source={''} title=''/>
-      </div>
-      <div className= 'projets__container--right'>
-        <div className='description__container'>
-          <p className='project__title'> Kasa </p>
-          <p className='project__description'> Développement d'un site responsive de location immobilière via une application à page unique (Single Page Application) </p>
-          <div className='project_technologie__container'>
-            <p className='project__technologies__title'>Technologies & outils</p>
-            <p className='project__technologies'>ReactJS</p>
-          </div>
-        </div>
-        <ProjectCard source={''} title=''/>
-        
-      </div>
-      <div className= 'projets__container--left'>
-        <div className='description__container'>
-          <p className='project__title'>Photographe Nina Carducci</p>
-          <p className='project__description'>Optimisation SEO et débugg du site d'une photographe. </p>
-          <div className='project_technologie__container'>
-            <p className='project__technologies__title'>Technologies & outils</p>
-            <p className='project__technologies'>Lighthouse ChromeDevTools</p>
-          </div>
-        </div>
-        <ProjectCard source={''} title=''/>
-      </div>
-  </section>
+
 
     <section className='contact'>
       <div>

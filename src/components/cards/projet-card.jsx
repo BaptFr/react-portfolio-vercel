@@ -1,8 +1,8 @@
 import React from 'react';
-import './project-card.sass';
+import './projet-card.sass';
 
 
-function ProjectCard({ source, title }) {
+function ProjetCard({ source, title }) {
     return (
         <div className='card__container'>
             <p>{title}</p>
@@ -12,4 +12,4 @@ function ProjectCard({ source, title }) {
 
 }
 
-export default ProjectCard
+export default ProjetCard

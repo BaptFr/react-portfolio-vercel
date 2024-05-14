@@ -16,13 +16,11 @@ function Layout({ children }) {
                 <NavLink to="/" className={location.pathname === "/" ? "active" : ""}>
                     <button>Accueil</button>
                 </NavLink>
-                
+                <NavLink to="/projets" className={location.pathname === "/projets" ? "active" : ""}>
                     <button>Mes projets</button>
-                    <button>Mon CV</button>
-
-                <NavLink to="/contact" className={location.pathname === "/about" ? "active" : ""}>
-                    <button>Me contacter</button>
                 </NavLink>
+
+                    <button>Mon CV</button>
             </nav>
             </header>
 
