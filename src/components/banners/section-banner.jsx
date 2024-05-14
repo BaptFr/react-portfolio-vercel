@@ -1,13 +1,12 @@
 import React from 'react';
-import './banner.sass'
+import './section-banner.sass'
 
-function Banner({ title }) {
+function SectionBanner({ title }) {
     return(
         <div className="banner__container">
             <h2> {title} </h2>
         </div>
-
     )
 }
 
-export default Banner;
+export default SectionBanner;

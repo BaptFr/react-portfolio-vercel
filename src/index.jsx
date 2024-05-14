@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home-page/home.jsx';
 import Layout from './components/layout/layout.jsx';
 import Projects from './pages/projets-page/projects.jsx';
+import Contact from './pages/contact-page/contact.jsx';
 import NotFound from './pages/error-page/not-found.jsx';
 
 
@@ -13,7 +14,8 @@ createRoot(document.getElementById('root')).render(
       <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projets" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />   
           </Routes>
       </Layout>

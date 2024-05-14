@@ -1,19 +1,28 @@
+
 {
-    "titres": ["Front-end", "Back-end", "Outils"],
-    "competences": [
-      [
-        { "nom": "React", "logo": "../assets/react-logo.svg" },
-        { "nom": "NodeJs", "logo": "../assets/node-logo.svg" },
-        { "nom": "GitHub", "logo": "../assets/github-logo.svg" }
-      ],
-      [
-        { "nom": "SASS", "logo": "../assets/sass-logo.svg" },
-        { "nom": "Postman", "logo": "../assets/postman-logo.svg" }
-      ],
-      [
-        { "nom": "JS", "logo": "../assets/js-logo.svg" },
-        { "nom": "MongoDB", "logo": "../assets/mongodb-logo.svg" },
-        { "nom": "FIGMA", "logo": "../assets/figma-logo.svg" }
+  "categories": [
+    {
+      "titre": "Front-end",
+      "competences": [
+        { "nom": "React" },
+        { "nom": "SASS"},
+        { "nom": "JS" }
       ]
-    ]
-  }
+    },
+    {
+      "titre": "Back-end",
+      "competences": [
+        { "nom": "NodeJs"},
+        { "nom": "Express"}
+      ]
+    },
+    {
+      "titre": "Outils",
+      "competences": [
+        { "nom": "MongoDB"},
+        { "nom": "GitHub" },
+        { "nom": "FIGMA"}
+      ]
+    }
+  ]
+}
