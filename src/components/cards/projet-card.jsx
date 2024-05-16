@@ -2,11 +2,10 @@ import React from 'react';
 import './projet-card.sass';
 
 
-function ProjetCard({ source, title }) {
+function ProjetCard({ source, alt }) {
     return (
         <div className='card__container'>
-            <p>{title}</p>
-            <img src={source} alt='illustration-projet'/>
+            <img src={source} alt={alt}/>
         </div>
     );
 

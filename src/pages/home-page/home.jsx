@@ -10,7 +10,7 @@ import Tableau from '../../components/sections/tableau.jsx';
 import LinkedinLogo from '../../assets/logos/linkedin-logo.svg';
 import MailLogo from'../../assets/logos/mail-logo.svg';
 import WorkLogo from'../../assets/logos/work-logo.svg';
-import NodeLogoSmall from '../../assets/logos/node-logo-small.svg';
+
 
 import competencesData from '../../datas/competences.json';
 import './home.sass';
@@ -34,9 +34,10 @@ function Home() {
         <p> Bienvenue sur mon portfolio ! <br/>
         <br/>
           Actuellement développeur web junior, <br/>
-          vous pouvez explorer ici sune partie de mes travaux, <br/>
-          je reste disponible si vous souhaitez  me contacter <br/>
-          pour toute demande d'information ou de collaboration. 
+          vous pouvez explorer ici sune partie de mes travaux. 
+          <br/>
+          Je reste disponible si vous souhaitez me contacter <br/>
+          pour toute demande d'informations ou de collaboration. 
         </p>
       </div>  
       <div className='introduction__picture' >
@@ -66,10 +67,23 @@ function Home() {
       <div className='competences__banner'>
         <SectionBanner  title="COMPÉTENCES"/>
       </div>
-      <div className='tableau__container'>
-        <Tableau categories={categories} />
+      <div className='competences__content'>
+        <div className='tableau__container'>
+          <Tableau categories={categories} />
+        </div>
+        <LogosBanner />
       </div>
-      <LogosBanner />
+    </section>
+
+    <section className='projets__section'>
+      <div className='projets__banner'>
+        <SectionBanner  title="PROJETS"/>
+      </div>
+      <div className='projets__link'>
+        <div className='projets__button'>
+          <p>LIEN VERS LES PROJETS</p>
+        </div>
+      </div>
     </section>
 
 
