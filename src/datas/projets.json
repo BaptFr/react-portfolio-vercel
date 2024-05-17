@@ -1,0 +1,43 @@
+[
+    {   
+        "id": "1",
+        "title": "KASA",
+        "description": "Site responsive de location immobilière permettant l' accès à la description, aux photos et particularités de chaque logement.",
+        "images": [
+            {
+              "source": "../../assets/projets-pictures/kasa-site.jpg",
+              "alt": "kasa-page-logement"
+            }
+          ],
+        "mission": " Développer avec React une Single Page Application et responsive.",
+        "link":"XXXX"
+    },
+
+    {   
+        "id": "2",
+        "title": "Mon Vieux Grimoire",
+        "description": "Site web de référencement de livres d'une chaine de librairies permettant aux utilisateurs d'ajouter des livres et de les évaluer",
+        "images": [
+            {
+              "source": "../assets/mvg-site.jpg",
+              "alt": "site-mon-vieu-grimoire"
+            }
+          ],
+        "mission": "Avec le Front-end fournit, développement du Back-end avec Node et MongoDB pour la base de données",
+        "link":"X"
+    },
+    {   
+        "id": "3",
+        "title": "Photographe Nina Carducci",
+        "description": "Site présentant le travail d'une photogrraphe via un portfolio",
+        "images": [
+            {
+              "source": "../assets/nina-car-site.jpg",
+              "alt": "site-nina-photographe"
+            }
+          ],
+        "mission": " Correction des bugs, modification et optimisation du code, amélioration des performances pour le SEO et référencement local",
+        "link":"X"
+    }
+    
+]                  

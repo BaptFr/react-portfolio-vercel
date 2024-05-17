@@ -9,78 +9,129 @@
     gap: 0px
     background-color: #0B0C10
 
-
     .projets__banner
         margin: 0
 
     .projets__intro
         text-align: center
+        color: #FFFFFF
+        font-size: 3.5em
+
+        p
+            margin: 0
     
         .intro__animation
+            margin-top: 50px
             margin-bottom: 200px
+            font-size: 2em
             font-weight: 300
             color: #FFFFFF
             text-shadow: 0 0 6px #FFFFFF
 
-
     .projets__container--left
-        padding: 200px
-        margin-bottom: 200px
         width: 100%
+        padding: 150px
+        margin-bottom: 150px
         display: flex
         flex-direction: row
         justify-content: space-around
+        align-items: center
         gap: 20px
         background-color: #000000
-        box-shadow: 5px 5px 10px #DEB992
-        border: 1px solid #DEB992
+        box-shadow: 5px 5px 10px #FFFFFF
+        border: 1px solid #FFFFFF
         
     .projets__container--right
         padding: 0px
-        margin-bottom: 200px
+        margin-bottom: 150px
         width: 100%
         display: flex
         flex-direction: row-reverse
         justify-content: space-around
+        align-items: center
         gap: 20px
 
-    .description__container
-        width: 50%
+    .projets__description__container
+        width: 40%
         display: flex
         flex-direction: column
         justify-content: center
-        text-align: center
-        color:#FFFFFF
+    
+        .projet__technologies__container
+            margin: 0
+            padding: 30px
+            border: 1px solid #deb992
+            border-radius: 30px
+            box-shadow: 5px 5px 10px #000000
 
-    .projet__title
-        margin: 0
-        font-size: 80px
-        font-weight: 500
-        text-align: center
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)
-
-    p
-        font-size: 50px
-        color: #FFFFFF
    
-    .projet_technologies__container
-        margin: 0
-        border: 1px solid #deb992
-        border-radius: 30px
-        box-shadow: 5px 5px 10px #000000
-                       
-    .projet__technologies
-        word-spacing: 100px
-        text-align: center
-        color: #DEB992
-        font-weight: 400
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)
+        .projet__technologies__title
+            margin: 0
+            font-size: 3.5em
+            font-weight: 400
+            color: #FFFFFF
+            text-align: center
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+            
+        .projet__technologies
+            word-spacing: 100px
+            text-align: center
+            color: #DEB992
+            font-weight: 400
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)
 
-    .projet__technologies__title
-        font-size: 60px
-        font-weight: 400
-        text-align: center
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
-                
+    .projet__pic__container
+        position: relative
+        width: 45%
+        height: 750px
+        display: flex   
+        justify-content: center
+        border-radius: 40px
 
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: 25% 0%
+            border-radius: 40px
+
+        .hover__content 
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            display: none
+            flex-direction: column
+            justify-content: center
+            align-items: center 
+            background-color: rgba(0, 0, 0, 0.8)
+            border: 1px solid #DEB992
+            font-size: 1.5rem
+            border-radius: 40px
+            z-index: 1
+            
+        &:hover .hover__content 
+            display: flex
+            
+
+        .hover__title
+            width: 100%
+            text-align: center
+            font-size: 5em
+            font-weight: 400
+            color: #FFFFFF
      
+        .hover__link
+            button
+                opacity: 1
+                padding: 40px 80px
+                border: none
+                border-radius: 10px
+                font-size: 1.5em
+                background: #FFFFFF
+                color: #000000
+                cursor: pointer
+    
+
+ 
