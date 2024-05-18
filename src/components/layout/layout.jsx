@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { NavLink, useLocation } from 'react-router-dom';
 import './layout.sass';
 import logoCopyright from'../../assets/copyright-white.svg';
@@ -11,7 +12,11 @@ function Layout({ children }) {
             <header>    
             <div className='header__title'>     
             </div>
-
+            <motion.div
+                initial={{ opacity: 0, x: -1300 }}
+                animate={{ opacity: 2, x: 0 }}
+                transition={{ duration: 1.1}}
+            >
             <nav className='navbar'>
                 <NavLink to="/" className={location.pathname === "/" ? "active" : ""}>
                     <button>Accueil</button>
@@ -22,6 +27,7 @@ function Layout({ children }) {
 
                     <button>Mon CV</button>
             </nav>
+            </motion.div>
             </header>
 
 

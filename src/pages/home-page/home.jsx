@@ -11,7 +11,6 @@ import LinkedinLogo from '../../assets/logos/linkedin-logo.svg';
 import MailLogo from'../../assets/logos/mail-logo.svg';
 import WorkLogo from'../../assets/logos/work-logo.svg';
 
-
 import competencesData from '../../datas/competences.json';
 import './home.sass';
 
@@ -23,12 +22,14 @@ function Home() {
 
     <div className='home__animation'>
       <Typewriter 
-        words= {[ 'Développeur web junior', 'Baptiste Salazar'  ]}
+        words= {[ 'Baptiste Salazar'  ]}
         loop= {1}
         cursor
         cursorStyle='|'
+        typeSpeed={250}
       /> 
     </div>
+ 
     <section className='introduction__section'>
       <div className='introduction__text'> 
         <p> Bienvenue sur mon portfolio ! <br/>
@@ -39,14 +40,15 @@ function Home() {
           Je reste disponible si vous souhaitez me contacter <br/>
           pour toute demande d'informations ou de collaboration. 
         </p>
-      </div>  
+      </div> 
       <div className='introduction__picture' >
         <img src='..' alt='profil-cv'/>
-      </div>              
+      </div>          
     </section> 
+  
 
 
-    <section className='links__section'> 
+    <section className='links__section'>
       <div className='links__perso'>
         <a href={'https:www.linkedin.com/in/baptiste-salazar-15518a18b'} target="_blank" rel="noopener noreferrer">
           <Button source={LinkedinLogo}/>
@@ -57,7 +59,7 @@ function Home() {
         <a href='#projets__section'>
           <Button source={WorkLogo}/>
         </a>
-      </div>
+      </div> 
     </section>
     <div className='nav__vertical__logo'>
         *** LOGO POUR TRANSITION VERTICAL ***

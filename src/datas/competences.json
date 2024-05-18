@@ -2,7 +2,7 @@
 {
   "categories": [
     {
-      "titre": "Front-end",
+      "titre": "FRONT-END",
       "competences": [
         { "nom": "React" },
         { "nom": "SASS"},
@@ -10,18 +10,19 @@
       ]
     },
     {
-      "titre": "Back-end",
+      "titre": "BACK-END",
       "competences": [
         { "nom": "NodeJs"},
         { "nom": "Express"}
       ]
     },
     {
-      "titre": "Outils",
+      "titre": "OUTILS",
       "competences": [
         { "nom": "MongoDB"},
         { "nom": "GitHub" },
-        { "nom": "FIGMA"}
+        { "nom": "Postman"},
+        { "nom": "Figma"}
       ]
     }
   ]
