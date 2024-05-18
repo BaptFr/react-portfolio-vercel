@@ -1,7 +1,7 @@
 import React from 'react';
-import './button.sass'
+import './button-link.sass'
 
-function Button({source}) {
+function ButtonLink({source}) {
     return(
         <div className="button__container">
           <img src={source} alt='logo-du-lien'/>
@@ -9,4 +9,4 @@ function Button({source}) {
     )
 }
 
-export default Button;
+export default ButtonLink;

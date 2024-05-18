@@ -7,7 +7,7 @@
     align-items: center
     justify-content:space-between
     gap: 0px
-    background-color: #0B0C10
+    background-color: #000000
 
     .projets__banner
         margin: 0
@@ -16,15 +16,15 @@
         text-align: center
         color: #FFFFFF
         font-size: 3.5em
-
         p
             margin: 0
     
         .intro__animation
             margin-top: 50px
             margin-bottom: 200px
-            font-size: 2em
+            font-size: 1.5em
             font-weight: 300
+            word-spacing: 0.3em
             color: #FFFFFF
             text-shadow: 0 0 6px #FFFFFF
 
@@ -37,12 +37,15 @@
         justify-content: space-around
         align-items: center
         gap: 20px
+        background-image: url('../../assets/fond-1.jpg')
+        background-size: cover
+        background-position: 50% 80%
         background-color: #000000
         box-shadow: 5px 5px 10px #FFFFFF
         border: 1px solid #FFFFFF
         
     .projets__container--right
-        padding: 0px
+        padding: 50px
         margin-bottom: 150px
         width: 100%
         display: flex
@@ -50,6 +53,10 @@
         justify-content: space-around
         align-items: center
         gap: 20px
+        background-color: #000000
+        background-image: url('../../assets/fond-1.jpg')
+        background-size: cover
+        background-position: 50% 80%
 
     .projets__description__container
         width: 40%
@@ -58,28 +65,54 @@
         justify-content: center
     
         .projet__technologies__container
+            position: relative
             margin: 0
             padding: 30px
             border: 1px solid #deb992
             border-radius: 30px
             box-shadow: 5px 5px 10px #000000
+            background: rgba(0, 0, 0, 0.8)
 
-   
-        .projet__technologies__title
-            margin: 0
-            font-size: 3.5em
-            font-weight: 400
-            color: #FFFFFF
-            text-align: center
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
-            
-        .projet__technologies
-            word-spacing: 100px
-            text-align: center
-            color: #DEB992
-            font-weight: 400
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)
+            .projet__technologies__title
+                margin: 0
+                font-size: 3.5em
+                font-weight: 400
+                color: #FFFFFF
+                text-align: center
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+                
+            .projet__technologies
+                width: 100%
+                margin-top: 30px
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
 
+        .hover__technologies
+            position: absolute
+            width: 100%
+            height: 60%
+            top: 40%
+            left: 0
+            display: none
+            flex-direction: row
+            justify-content: flex-end
+            align-items: center
+            border-radius: 0px 0px 30px 30px
+            background-color: rgba(0, 0, 0, 0.9)
+            z-index:1
+            p
+                width: 100%
+                text-align: center
+                color: #FFFFFF
+                font-size: 1.5em
+                font-weight: 400
+
+        &:hover .hover__technologies
+            display: flex
+    
+                
     .projet__pic__container
         position: relative
         width: 45%
@@ -87,7 +120,8 @@
         display: flex   
         justify-content: center
         border-radius: 40px
-
+        border: 1.5px solid #DEB992
+        box-shadow: 0px 0px 5px #DEB992
         img
             width: 100%
             height: 100%
@@ -105,7 +139,7 @@
             flex-direction: column
             justify-content: center
             align-items: center 
-            background-color: rgba(0, 0, 0, 0.8)
+            background-color: rgba(0, 0, 0, 0.9)
             border: 1px solid #DEB992
             font-size: 1.5rem
             border-radius: 40px
@@ -114,24 +148,28 @@
         &:hover .hover__content 
             display: flex
             
-
         .hover__title
             width: 100%
             text-align: center
-            font-size: 5em
+            font-size: 3.5em
             font-weight: 400
             color: #FFFFFF
      
         .hover__link
+            padding: 30px
             button
                 opacity: 1
-                padding: 40px 80px
-                border: none
+                padding: 40px 50px
+                text-align: center
+                border: 1px solid #DEB992
                 border-radius: 10px
                 font-size: 1.5em
-                background: #FFFFFF
-                color: #000000
+                background: #000000
+                color: #FFFFFF
+                box-shadow: 0px 0px 10px #FFFFFF
                 cursor: pointer
+            button:hover
+                transform: scale(1.1)
     
 
  

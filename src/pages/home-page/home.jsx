@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 import SectionBanner from '../../components/banners/section-banner.jsx';
 import LogosBanner from '../../components/banners/logos-banner.jsx';
-import Button from '../../components/buttons/button.jsx';
+import ButtonLink from '../../components/buttons/button-link.jsx';
 import Tableau from '../../components/sections/tableau.jsx';
 
 import LinkedinLogo from '../../assets/logos/linkedin-logo.svg';
@@ -19,14 +19,13 @@ function Home() {
 
   return (
   <div className='home__container'>
-
     <div className='home__animation'>
       <Typewriter 
         words= {[ 'Baptiste Salazar'  ]}
         loop= {1}
         cursor
         cursorStyle='|'
-        typeSpeed={250}
+        typeSpeed={200}
       /> 
     </div>
  
@@ -47,27 +46,27 @@ function Home() {
     </section> 
   
 
-
     <section className='links__section'>
       <div className='links__perso'>
         <a href={'https:www.linkedin.com/in/baptiste-salazar-15518a18b'} target="_blank" rel="noopener noreferrer">
-          <Button source={LinkedinLogo}/>
+          <ButtonLink source={LinkedinLogo}/>
         </a>
         <NavLink to='/contact' >
-          <Button source={MailLogo}/>
+          <ButtonLink source={MailLogo}/>
         </NavLink>
-        <a href='#projets__section'>
-          <Button source={WorkLogo}/>
-        </a>
+        <NavLink to='/projets' >
+          <ButtonLink source={WorkLogo}/>
+        </NavLink>
       </div> 
     </section>
+
     <div className='nav__vertical__logo'>
         *** LOGO POUR TRANSITION VERTICAL ***
     </div> 
 
     <section id='competences__section' className='competences__section'>
       <div className='competences__banner'>
-        <SectionBanner  title="COMPÉTENCES"/>
+        <SectionBanner  title="SKILLS"/>
       </div>
       <div className='competences__content'>
         <div className='tableau__container'>
@@ -77,32 +76,28 @@ function Home() {
       </div>
     </section>
 
+
     <section className='projets__section'>
       <div className='projets__banner'>
         <SectionBanner  title="PROJETS"/>
       </div>
       <div className='projets__link'>
         <div className='projets__button'>
-          <p>LIEN VERS LES PROJETS</p>
+          <NavLink to='/projets' >
+            <p>VOIR LES PROJETS</p>
+          </NavLink>
         </div>
       </div>
     </section>
-
 
 
     <section className='contact'>
       <div>
         <NavLink to="/contact">
           <button> ME CONTACTER </button>
-
         </NavLink>
-      
       </div>
-
     </section>
-
-
-
   </div>
   );
 }

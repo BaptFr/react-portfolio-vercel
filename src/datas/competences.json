@@ -5,8 +5,10 @@
       "titre": "FRONT-END",
       "competences": [
         { "nom": "React" },
-        { "nom": "SASS"},
-        { "nom": "JS" }
+        { "nom": "Sass"},
+        { "nom": "JS" },
+        { "nom": "CSS"},
+        { "nom": "HTML"}
       ]
     },
     {
