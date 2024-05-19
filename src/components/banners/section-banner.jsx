@@ -9,7 +9,9 @@ function SectionBanner({ title }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         >
+        
         <div className="banner__container">
+            <hr />
             <h2> {title} </h2>
         </div>
         </motion.div>

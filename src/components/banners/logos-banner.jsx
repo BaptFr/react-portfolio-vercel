@@ -17,7 +17,7 @@ function LogosBanner() {
     return(
         <div className='logos'>
             <div className='logos__slide'>
-                <img src={reactLogo} alt="React-logo" /> 
+                <img src={reactLogo} id='react-logo' alt="React-logo" /> 
                 <img src={sassLogo} alt="SASS-logo" /> 
                 <img src={jsLogo} alt="JS-logo" />
                 <img src={cssLogo} alt="Css-logo" />
@@ -30,7 +30,7 @@ function LogosBanner() {
                 <img src={figmaLogo} alt="Figma Logo" />
             </div>
             <div className='logos__slide'>
-                <img src={reactLogo} alt="React-logo" /> 
+                <img src={reactLogo} id='react-logo' alt="React-logo" /> 
                 <img src={sassLogo} alt="SASS-logo" /> 
                 <img src={jsLogo} alt="JS-logo" />
                 <img src={cssLogo} alt="Css-logo" />
@@ -43,7 +43,7 @@ function LogosBanner() {
                 <img src={figmaLogo} alt="Figma Logo" />
             </div>
             <div className='logos__slide'>
-                 <img src={reactLogo} alt="React-logo" /> 
+                <img src={reactLogo} id='react-logo' alt="React-logo" /> 
                 <img src={sassLogo} alt="SASS-logo" /> 
                 <img src={jsLogo} alt="JS-logo" />
                 <img src={cssLogo} alt="Css-logo" />
@@ -55,32 +55,7 @@ function LogosBanner() {
                 <img src={postmanLogo} alt="Postman-Logo" />
                 <img src={figmaLogo} alt="Figma Logo" />
             </div>
-            <div className='logos__slide'>
-                <img src={reactLogo} alt="React-logo" /> 
-                <img src={sassLogo} alt="SASS-logo" /> 
-                <img src={jsLogo} alt="JS-logo" />
-                <img src={cssLogo} alt="Css-logo" />
-                <img src={htmlLogo} alt="Html-logo" />
-                <img src={nodeJsLogo} alt="NodeJS-Logo" />
-                <img src={expressLogo} alt="express-logo"/>
-                <img src={mongodbLogo} alt="MongoDB-Logo" />
-                <img src={githubLogo} alt="GitHub-Logo" />
-                <img src={postmanLogo} alt="Postman-Logo" />
-                <img src={figmaLogo} alt="Figma Logo" />
-            </div>
-            <div className='logos__slide'>
-                <img src={reactLogo} alt="React-logo" /> 
-                <img src={sassLogo} alt="SASS-logo" /> 
-                <img src={jsLogo} alt="JS-logo" />
-                <img src={cssLogo} alt="Css-logo" />
-                <img src={htmlLogo} alt="Html-logo" />
-                <img src={nodeJsLogo} alt="NodeJS-Logo" />
-                <img src={expressLogo} alt="express-logo"/>
-                <img src={mongodbLogo} alt="MongoDB-Logo" />
-                <img src={githubLogo} alt="GitHub-Logo" />
-                <img src={postmanLogo} alt="Postman-Logo" />
-                <img src={figmaLogo} alt="Figma Logo" />
-            </div>
+            
         </div>
     )
 }

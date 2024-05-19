@@ -15,10 +15,10 @@ function ProjetDisplay ({ projetId }){
         <div className='description__container'>
           <div className='text__container'>
             <p className='projet__title'> {projet.title} </p>
-            <p className='projet__description'> {projet.description} </p>
+            {/*<p className='projet__description'> {projet.description} </p> */}
           </div>
           <div className='projet__missions__container'>
-            <p className='projet__missions__title'>OBJECTIFS</p>
+            <p className='projet__missions__title'>DESCRIPTION</p>
             <p className='projet__missions'> {projet.mission}</p>
           </div>
         </div>

@@ -1,93 +1,101 @@
+h2
+    margin: 0
 
 .projets__section
-    margin-top: 0px
     width: 100%  
     display: flex
     flex-direction: column
     align-items: center
     justify-content:space-between
     gap: 0px
-    background-color: #000000
+    background-color: #010b13
 
-    .projets__banner
-        margin: 0
+    .projets__page__banner
+        margin-top: 50px
+        hr
+            display: none
 
     .projets__intro
+        margin-top: 10px
         text-align: center
         color: #FFFFFF
-        font-size: 3.5em
-        p
-            margin: 0
+        font-size: 3em
+
     
         .intro__animation
-            margin-top: 50px
-            margin-bottom: 200px
-            font-size: 1.5em
+            margin-top: 10px
+            margin-bottom: 20px
+            font-size: 1em
             font-weight: 300
             word-spacing: 0.3em
             color: #FFFFFF
-            text-shadow: 0 0 6px #FFFFFF
+            text-shadow: 0 0 6px #000000
+
+        hr
+            margin-top: 150px
+            margin-bottom: 150px
 
     .projets__container--left
-        width: 100%
-        padding: 150px
+        width: 90%
         margin-bottom: 150px
         display: flex
         flex-direction: row
         justify-content: space-around
         align-items: center
-        gap: 20px
-        background-image: url('../../assets/fond-1.jpg')
-        background-size: cover
-        background-position: 50% 80%
-        background-color: #000000
-        box-shadow: 5px 5px 10px #FFFFFF
-        border: 1px solid #FFFFFF
-        
+        background-color: rgba(0, 0, 0, 0.3)
+        box-shadow: 3px 5px 5px #DEB992
+        border: 1px solid #DEB992
+        border-radius: 20px
+
     .projets__container--right
-        padding: 50px
+        width: 80%
+        padding: 20px 20px 
         margin-bottom: 150px
         width: 100%
         display: flex
         flex-direction: row-reverse
         justify-content: space-around
         align-items: center
-        gap: 20px
-        background-color: #000000
-        background-image: url('../../assets/fond-1.jpg')
-        background-size: cover
-        background-position: 50% 80%
+        background-color: rgba(0, 0, 0, 0.3)
+        box-shadow: 3px 5px 5px #DEB992
+        border: 1px solid #DEB992
+        border-radius: 20px
 
     .projets__description__container
         width: 40%
         display: flex
         flex-direction: column
+        align-items: center
         justify-content: center
     
-        .projet__technologies__container
-            position: relative
-            margin: 0
-            padding: 30px
-            border: 1px solid #deb992
-            border-radius: 30px
-            box-shadow: 5px 5px 10px #000000
-            background: rgba(0, 0, 0, 0.8)
+    .projet__technologies__container
+        position: relative
+        width: 80%
+        margin: 20px
+        padding: 20px
+        display: flex
+        flex-direction: column
+        align-items: center
+        border: 1px solid #deb992
+        border-radius: 30px
+        box-shadow: 5px 5px 10px #000000
+        background: rgba(0, 0, 0, 0.8)
 
-            .projet__technologies__title
-                margin: 0
-                font-size: 3.5em
-                font-weight: 400
-                color: #FFFFFF
-                text-align: center
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
-                
-            .projet__technologies
-                width: 100%
-                margin-top: 30px
-                display: flex
-                flex-direction: row
-                justify-content: space-between
-                align-items: center
+        .projet__technologies__title
+            margin: 0
+            font-size: 2.5em
+            font-weight: 400
+            color: #FFFFFF
+            text-align: center
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+            
+        .projet__technologies
+            width: 100%
+            margin-top: 30px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
 
         .hover__technologies
             position: absolute
@@ -114,19 +122,21 @@
     
                 
     .projet__pic__container
+        margin: 50px 0px
         position: relative
-        width: 45%
+        width: 50%
         height: 750px
         display: flex   
         justify-content: center
+        flex-direction: column
         border-radius: 40px
-        border: 1.5px solid #DEB992
+        border: 1.5px solid #DEB992      
         box-shadow: 0px 0px 5px #DEB992
         img
             width: 100%
             height: 100%
             object-fit: cover
-            object-position: 25% 0%
+            object-position: 15% 0%
             border-radius: 40px
 
         .hover__content 

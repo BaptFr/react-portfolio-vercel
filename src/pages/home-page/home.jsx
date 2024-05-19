@@ -7,10 +7,10 @@ import LogosBanner from '../../components/banners/logos-banner.jsx';
 import ButtonLink from '../../components/buttons/button-link.jsx';
 import Tableau from '../../components/sections/tableau.jsx';
 
-import LinkedinLogo from '../../assets/logos/linkedin-logo.svg';
-import MailLogo from'../../assets/logos/mail-logo.svg';
-import WorkLogo from'../../assets/logos/work-logo.svg';
-
+import MailLogo from'../../assets/logos/mail-logo-col.svg';
+import WorkLogo from'../../assets/logos/work-logo-col.svg';
+import FormationLogo from '../../assets/logos/graduation-logo-col.svg';
+import SkillsLogo from '../../assets/logos/skills-logo-col.svg';
 import competencesData from '../../datas/competences.json';
 import './home.sass';
 
@@ -34,7 +34,7 @@ function Home() {
         <p> Bienvenue sur mon portfolio ! <br/>
         <br/>
           Actuellement développeur web junior, <br/>
-          vous pouvez explorer ici sune partie de mes travaux. 
+          vous pouvez explorer ici une partie de mes travaux. 
           <br/>
           Je reste disponible si vous souhaitez me contacter <br/>
           pour toute demande d'informations ou de collaboration. 
@@ -48,15 +48,30 @@ function Home() {
 
     <section className='links__section'>
       <div className='links__perso'>
-        <a href={'https:www.linkedin.com/in/baptiste-salazar-15518a18b'} target="_blank" rel="noopener noreferrer">
-          <ButtonLink source={LinkedinLogo}/>
-        </a>
-        <NavLink to='/contact' >
-          <ButtonLink source={MailLogo}/>
-        </NavLink>
-        <NavLink to='/projets' >
-          <ButtonLink source={WorkLogo}/>
-        </NavLink>
+        <div className='links__button_container'>
+          <a href='#formation__section'> 
+            <ButtonLink source={FormationLogo}/>
+          </a>
+          <p>Formation</p>
+        </div>
+        <div className='links__button_container'>
+          <a href='#skills__section'> 
+            <ButtonLink source={SkillsLogo}/>
+          </a>
+          <p>Skills</p>
+        </div>
+        <div className='links__button_container'>
+          <NavLink to='/projets' >
+            <ButtonLink source={WorkLogo}/>
+          </NavLink>
+          <p>Page projets</p>
+        </div>
+        <div className='links__button_container'>
+          <NavLink to='/contact' >
+            <ButtonLink source={MailLogo}/>
+          </NavLink>
+          <p>Page contact</p>
+        </div>
       </div> 
     </section>
 
@@ -64,11 +79,21 @@ function Home() {
         *** LOGO POUR TRANSITION VERTICAL ***
     </div> 
 
-    <section id='competences__section' className='competences__section'>
-      <div className='competences__banner'>
-        <SectionBanner  title="SKILLS"/>
+    <section id='formation__section' className='formation__section'>
+      <div className='formation__banner'>
+        <SectionBanner  title="FORMATION" id='formation'/>
       </div>
-      <div className='competences__content'>
+      <div className='formation__content'>
+        <p>aaaa</p>
+        
+      </div>
+    </section>
+
+    <section id='skills__section' className='skills__section'>
+      <div className='skills__banner'>
+        <SectionBanner  title="SKILLS" id='skills'/>
+      </div>
+      <div className='skills__content'>
         <div className='tableau__container'>
           <Tableau categories={categories} />
         </div>
@@ -77,12 +102,12 @@ function Home() {
     </section>
 
 
-    <section className='projets__section'>
-      <div className='projets__banner'>
-        <SectionBanner  title="PROJETS"/>
+    <section className='redirection__section'>
+      <div className='redirection__banner'>
+        <SectionBanner  title='PROJETS'/>
       </div>
-      <div className='projets__link'>
-        <div className='projets__button'>
+      <div className='redirection__link' id='redirection__projet'>
+        <div className='redirection__button'>
           <NavLink to='/projets' >
             <p>VOIR LES PROJETS</p>
           </NavLink>
@@ -91,11 +116,16 @@ function Home() {
     </section>
 
 
-    <section className='contact'>
-      <div>
-        <NavLink to="/contact">
-          <button> ME CONTACTER </button>
-        </NavLink>
+    <section className='redirection__section' id="bottom__section">
+      <div className='redirection__banner'>
+        <SectionBanner  title='CONTACT'/>
+      </div>
+      <div className='redirection__link' id='redirection__contact'>
+        <div className='redirection__button'>
+          <NavLink to='/contact' >
+            <p> ME CONTACTER DIRECTEMENT</p>
+          </NavLink>
+        </div>
       </div>
     </section>
   </div>

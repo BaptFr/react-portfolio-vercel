@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { NavLink, useLocation } from 'react-router-dom';
 import './layout.sass';
-import logoCopyright from'../../assets/copyright-white.svg';
+import logoCopyright from'../../assets/logos/copyright-white.svg';
 
 function Layout({ children }) {
 
@@ -19,13 +19,14 @@ function Layout({ children }) {
             >
             <nav className='navbar'>
                 <NavLink to="/" className={location.pathname === "/" ? "active" : ""}>
-                    <button>Accueil</button>
+                    <button>Présentation</button>
                 </NavLink>
                 <NavLink to="/projets" className={location.pathname === "/projets" ? "active" : ""}>
                     <button>Mes projets</button>
                 </NavLink>
-
-                    <button>Mon CV</button>
+                <NavLink to="/contact" className={location.pathname === "/contact" ? "active" : ""}>
+                    <button>Me contacter</button>
+                </NavLink>
             </nav>
             </motion.div>
             </header>

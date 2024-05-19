@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import SectionBanner from '../../components/banners/section-banner.jsx';
 import ProjetDisplay from  '../../components/cards/projet-display.jsx';
 import LogoColor from '../../components/logos/logo-color.jsx';
 import projetsData from '../../datas/projets.json'
-
 
 import  KasaPic from '../../assets/projets-pictures/kasa-site.jpg';
 import  NinaPic from '../../assets/projets-pictures/nina-car-site.jpg';
@@ -19,13 +18,10 @@ import  ChromeLogoC  from '../../assets/logos/chrome-logo-col.svg';
 import  LighthouseLogoC  from '../../assets/logos/lighthouse-logo-col.svg';
 import  GitLogoC  from '../../assets/logos/github-logo-col.svg';
 
-
-
 import './projets.sass';
 
 
 function Projets() {
-
   const projetId1 = projetsData.find((projet) => projet.id === "1");
   const projetId2 = projetsData.find((projet) => projet.id === "2");
   const projetId3 = projetsData.find((projet) => projet.id === "3");
@@ -35,41 +31,44 @@ function Projets() {
     <section id='projets__section' className='projets__section'>
 
     {/* INTRO & ANIMATION */}
-      <div className='projets__banner'>
-        <SectionBanner title="PROJETS"/>
+      <div className='projets__page__banner'>
+        <SectionBanner title="Mes projets" />
       </div>
       <div className='projets__intro'>
-        <p>Voici trois projet offrants un aperçu de mes réalisations <br/>
-        </p>
-        <br/> 
         <p className='intro__animation'>
           <Typewriter 
-              words= {[ 'FRONT-END / BACK-END / OPTIMISATION SEO'  ]}
-              loop={1}
-              cursor
-              cursorStyle='|'
-              typeSpeed={120}
+            words= {[ 'Front-end / Back-end / Optimisation SEO'  ]}
+            loop={1}
+            cursor
+            cursorStyle='|'
+            typeSpeed={120}
           />
         </p>
+        <p>Bienvenue sur la page des projets <br/>
+          Voici trois projet offrants un aperçu de mes réalisations <br/>
+        </p>
+        <hr/> 
+        
       </div>
 
-    
       {/* PROJETS  */}
       <div className= 'projets__container--left'>
         <div className='projets__description__container'>
           <ProjetDisplay projetId={1}   />
           <div className='projet__technologies__container'>
-          <div className='hover__technologies'>
+            <div className='hover__technologies'>
               <p>ReactJS</p> 
               <p> Sass </p> 
               <p> Figma</p>
+              <p> GithHub</p>
             </div>
             <p className='projet__technologies__title'>TECHNOLOGIES & OUTILS</p>
             <div className='projet__technologies'> 
-              <LogoColor src={ReactLogoC} alt='react-technologie'/>
-              <LogoColor src={SassLogoC} alt='sass-technologie'/>
-              <LogoColor src={FigmaLogoC} alt='figma-symbol'/>
-            </div>   
+              <LogoColor src={ReactLogoC} alt='react-technologie' size="small" />
+              <LogoColor src={SassLogoC} alt='sass-technologie' size="small" />
+              <LogoColor src={FigmaLogoC} alt='figma-symbol' size="small" />
+              <LogoColor src={GitLogoC} alt='git-symbol'size="small" /> 
+            </div>
           </div>
         </div>
         <div className='projet__pic__container'>
@@ -83,9 +82,10 @@ function Projets() {
                 <button>LIEN VERS LE SITE</button>
               </a>
             </div>
-          </div>       
-        </div>
+          </div>
+        </div>  
       </div>
+
 
       <div className= 'projets__container--right'>
         <div className='projets__description__container'>
@@ -95,12 +95,14 @@ function Projets() {
               <p>Node JS </p> 
               <p> MongoDB </p> 
               <p> POSTMAN</p>
+              <p> GithHub</p>
             </div>
             <p className='projet__technologies__title'>TECHNOLOGIES & OUTILS</p>
             <div className='projet__technologies'>
-              <LogoColor src={NodeLogoC} alt='node-technologie'> </LogoColor>
-              <LogoColor src={MongoLogoC} alt='mongo-symbol'/>
-              <LogoColor src={PostmanLogoC} alt='postman-symbol'/>
+              <LogoColor src={NodeLogoC} alt='node-technologie' size="medium" /> 
+              <LogoColor src={MongoLogoC} alt='mongo-symbol' size="medium" />
+              <LogoColor src={PostmanLogoC} alt='postman-symbol'size="medium" />
+              <LogoColor src={GitLogoC} alt='git-symbol'size="small" /> 
             </div>
           </div>
         </div>
@@ -130,9 +132,9 @@ function Projets() {
             </div>
               <p className='projet__technologies__title'>TECHNOLOGIES & OUTILS</p>
               <div className='projet__technologies'>
-                <LogoColor src={ChromeLogoC} alt='dev-chrome-tools'> </LogoColor>
-                <LogoColor src={LighthouseLogoC} alt='lighthouse-symbol'> </LogoColor>
-                <LogoColor src={GitLogoC} alt='git-symbol'> </LogoColor>
+                <LogoColor src={ChromeLogoC} alt='dev-chrome-tools' size="small" />
+                <LogoColor src={LighthouseLogoC} alt='lighthouse-symbol' size="small" />
+                <LogoColor src={GitLogoC} alt='git-symbol'size="small" /> 
               </div>
           </div>
         </div>
@@ -150,9 +152,7 @@ function Projets() {
           </div>       
         </div>
       </div>
-      
     </section>
- 
   )
 }
 

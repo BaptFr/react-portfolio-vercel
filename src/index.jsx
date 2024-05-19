@@ -6,6 +6,7 @@ import Home from './pages/home-page/home.jsx';
 import Layout from './components/layout/layout.jsx';
 import Projets from './pages/projets-page/projets.jsx';
 import NotFound from './pages/error-page/not-found.jsx';
+import Contact from './pages/contact-page/contact-page.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projets" element={<Projets />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />   
           </Routes>
       </Layout>
