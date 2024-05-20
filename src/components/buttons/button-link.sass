@@ -1,3 +1,15 @@
+= logos-s ($width: 30px, $height: 30px)
+    width: $width
+    height: $height
+
+= logos-m ($width: 50px, $height: 50px)
+    width: $width
+    height: $height
+
+= logos-l ($width: 80px, $height: 80px)
+    width: $width
+    height: $height
+
 .button__container
     margin: 0px 
     padding: 0
@@ -5,9 +17,26 @@
     justify-content: center
     align-items: center
     img
-        width: 80px
-        height: 80px
-    
+        +logos-l
     
 
-    
+//MEDIA QUERIES
+
+// Media Queries MEDIUM DEVICES
+$breakpoint-medium: 1024px
+@media screen and (max-width: $breakpoint-medium)
+    .button__container
+        img
+            +logos-m
+            margin: 0px 30px
+
+// Media Queries SMALL DEVICES
+$breakpoint-small: 768px
+@media screen and (max-width: $breakpoint-small)
+
+  .button__container
+        img
+            +logos-l
+            margin: 0
+
+         

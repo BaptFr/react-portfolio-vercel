@@ -1,7 +1,11 @@
+$logoS: 75px
+$logoM: 100px
+$logoL: 150px
+
 .logos
     position: relative
     width: 100%
-    margin-top: 100px
+    margin-top: 50px
     display: flex
     flex-direction: row
     justify-content: space-between
@@ -21,7 +25,7 @@
     animation: slide 30s linear infinite
 
     img
-        width: 150px
+        width: $logoL
         height: auto
         margin: 0px
     #react-logo
@@ -34,3 +38,32 @@
     100% 
         transform: translateX(-100%)
     
+
+
+//MEDIA QUERIES //
+
+// Media Queries MEDIUM DEVICES
+$breakpoint-medium: 1024px
+@media screen and (max-width: $breakpoint-medium)
+
+    .logos
+        img
+            width: $logoM
+            height: auto
+            margin: 0px
+
+  
+      
+// Media Queries SMALL DEVICES
+$breakpoint-small: 768px
+@media screen and (max-width: $breakpoint-small)
+
+    .logos
+        img
+            width: $logoS
+            height: auto
+            margin: 0px
+
+
+ 
+

@@ -15,7 +15,6 @@ header
     flex-direction: row
     align-items: center
     flex-wrap: nowrap
-    font-size: 30px
     color: #0B0C10
     background-color: #000000
     border-bottom: 1px solid  #deb992
@@ -76,4 +75,45 @@ footer
             margin: 0 
             width:20px
        
+// MEDIA QUERIES //
+
+// Media Queries MEDIUM DEVICES
+$breakpoint-medium: 1024px
+@media screen and (max-width: $breakpoint-medium)
+
+    header
+        height: 50px
+        flex-direction: row
+        justify-content: center
+
+        .navbar
+            margin: 10px 100px 0px 100px
+
+     
+// Media Queries SMALL DEVICES
+$breakpoint-small: 768px
+@media screen and (max-width: $breakpoint-small)
+    
+    header
+        height: 50px
+        flex-direction: row
+        justify-content: center
+
+        .navbar
+            margin: 10px 0px 0px 0px
+            gap: 20px
+
+            button
+                font-size: 1.2em
+                flex-wrap: nowrap
+
+    footer
+        margin-top: 10px
+        .footer__containt
+            font-size: 20px
+            img
+                width:15px
+       
+    
+
 

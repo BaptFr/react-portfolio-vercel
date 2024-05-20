@@ -9,7 +9,7 @@
               "alt": "kasa-page-logement"
             }
           ],
-        "mission": "  J’ai développé l'ensemble de l'application pour le front-end, avec React pour obtenir une Single Page Application respectant les maquettes Figma, gantissant un rendu fidèle et responsive. '</br> Tout le style a été développé avec Sass mais aussi des animations CSS pour améliorer l'expérience utilisateur.",
+        "mission": "  J’ai développé l'ensemble de l'application pour le front-end, avec React pour obtenir une Single Page Application respectant les maquettes Figma, gantissant un rendu fidèle et responsive. Tout le style a été développé avec Sass mais aussi des animations CSS pour améliorer l'expérience utilisateur.",
         "link":"XXXX"
     },
 
@@ -23,7 +23,7 @@
               "alt": "site-mon-vieu-grimoire"
             }
           ],
-        "mission": "POur le développement back-end de ce projet, en suivant une architecture MVC, j'ai créé un serveur avec Express afin de le connecter à une base de données MongoDB, créé une API RESTful, développé les modèles de données en utilisant Mongoose, implémenté des opérations CRUD et un système d'authentification sécurisé pour les utilisateurs. En respectant les pratiques du Green Code notament avec l'optimisation des images téléchargées. ",
+        "mission": "Pour le développement back-end de ce projet, en suivant une architecture MVC, j'ai créé un serveur avec Express afin de le connecter à une base de données MongoDB, créé une API RESTful, développé les modèles de données en utilisant Mongoose, implémenté des opérations CRUD et un système d'authentification sécurisé pour les utilisateurs. En respectant les pratiques du Green Code notament avec l'optimisation des images téléchargées. ",
         "link":"X"
     },
     {   

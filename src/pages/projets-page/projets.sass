@@ -6,8 +6,7 @@ h2
     display: flex
     flex-direction: column
     align-items: center
-    justify-content:space-between
-    gap: 0px
+    justify-content: space-between
     background-color: #010b13
 
     .projets__page__banner
@@ -16,12 +15,13 @@ h2
             display: none
 
     .projets__intro
-        margin-top: 10px
+        margin: 100px 50px 0px 50px
         text-align: center
         color: #FFFFFF
-        font-size: 3em
+        font-size: 2.5em
+        p
+            font-size: 2em
 
-    
         .intro__animation
             margin-top: 10px
             margin-bottom: 20px
@@ -33,8 +33,10 @@ h2
 
         hr
             margin-top: 150px
-            margin-bottom: 150px
+            margin-bottom: 200px
 
+
+    // PROJECT CONTAINER LEFT //
     .projets__container--left
         width: 90%
         margin-bottom: 150px
@@ -47,22 +49,24 @@ h2
         border: 1px solid #DEB992
         border-radius: 20px
 
+
+    // PROJECT CONTAINER RIGHT //
     .projets__container--right
-        width: 80%
-        padding: 20px 20px 
+        width: 90%
         margin-bottom: 150px
-        width: 100%
         display: flex
         flex-direction: row-reverse
         justify-content: space-around
         align-items: center
         background-color: rgba(0, 0, 0, 0.3)
-        box-shadow: 3px 5px 5px #DEB992
+        box-shadow: -3px 5px 5px #DEB992
         border: 1px solid #DEB992
         border-radius: 20px
 
+
+    // PROJECT CONTAIN & TECHNO //
     .projets__description__container
-        width: 40%
+        width: 50%
         display: flex
         flex-direction: column
         align-items: center
@@ -91,11 +95,12 @@ h2
             
         .projet__technologies
             width: 100%
-            margin-top: 30px
+            margin-top: 40px
             display: flex
             flex-direction: row
-            justify-content: space-between
-            align-items: center
+            justify-content: space-around
+            flex-wrap: no-wrap
+            
 
         .hover__technologies
             position: absolute
@@ -120,14 +125,17 @@ h2
         &:hover .hover__technologies
             display: flex
     
-                
+
+    //PROJECT PICTURE //               
     .projet__pic__container
-        margin: 50px 0px
         position: relative
-        width: 50%
-        height: 750px
+        width: 40%
+        min-height: 400px
+        aspect-ratio: 4/3
+        margin-top: 75px
         display: flex   
-        justify-content: center
+        justify-content: flex-start
+        align-items: center
         flex-direction: column
         border-radius: 40px
         border: 1.5px solid #DEB992      
@@ -169,11 +177,11 @@ h2
             padding: 30px
             button
                 opacity: 1
-                padding: 40px 50px
+                padding: 25px 30px
                 text-align: center
                 border: 1px solid #DEB992
                 border-radius: 10px
-                font-size: 1.5em
+                font-size: 1.3em
                 background: #000000
                 color: #FFFFFF
                 box-shadow: 0px 0px 10px #FFFFFF
@@ -182,4 +190,76 @@ h2
                 transform: scale(1.1)
     
 
+//  MEDIA QUERIES //
  
+
+// Media Queries MEDIUM DEVICES
+$breakpoint-medium: 1024px
+@media screen and (max-width: $breakpoint-medium)
+    
+    .projets__section
+        background-color: red
+        .projets__intro
+            font-size: 2em
+            hr
+                margin-top: 100px
+                margin-bottom: 150px
+     
+        .projets__container--left, .projets__container--right
+            flex-direction: column
+            padding : 20px 0px
+
+        .projets__description__container
+            width: 85%
+
+        .projet__pic__container
+            width: 73%
+            height: 400px
+            margin: 20px 0px
+            aspect-ratio: 4/3
+
+
+// Media Queries SMALL DEVICES
+$breakpoint-small: 768px
+@media screen and (max-width: $breakpoint-small)
+
+        .projets__section
+            background-color: green
+
+            .projets__intro
+                margin: 50px 50px 0px 50px
+                text-align: center
+                color: #FFFFFF
+                font-size: 1.5em
+            .projets__container--left, .projets__container--right
+
+            .projet__pic__container  
+                width: 90%
+                height: auto
+                height-min: 275px
+               
+                img
+                    object-fit: cover
+
+            .projet__technologies__container
+                    padding: 10px
+                    .projet__technologies
+                        flex-wrap: wrap
+                        gap: 35px
+                    .hover__technologies
+                        height: 70%
+                        top: 30%
+                        p 
+                            font-size: 0.8em
+                            font-weight: 300 
+                
+
+                
+              
+             
+
+            
+            
+        
+
+

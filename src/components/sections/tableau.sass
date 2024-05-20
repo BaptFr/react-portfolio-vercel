@@ -6,27 +6,28 @@ ul, li
     padding: 0px 20px 50px 20px
     display: flex
     justify-content: center
-    align-items: center
+    align-items: flex-start
+    
 
     .tableau
         position: relative
-        width: 100%
+        max-width: 100%
+        width: 90%
         height: auto
-        padding: 0px 150px
+        padding: 0px 100px
         display: flex
         flex-direction: row 
-        justify-content: space-between
+        justify-content: space-around
         align-items: flex-start
-        flex: 1
         flex-wrap: no-wrap
    
     
 
-        &__card
+        &__card 
+            margin: 10px 
+            padding: 40px 40px 0px 40px
             display: flex
             flex-direction: column
-            min-width: 300px
-            margin: 10px
             font-family: "Yanone Kaffeesatz", sans-serif
             background-color: #000000
             border: 1px solid #DEB992
@@ -37,7 +38,7 @@ ul, li
         .ant-card-head  
             margin: 0
             text-align: center
-            font-size: 3.5em
+            font-size: 4em
             font-weight: 400
             color: #FFFFFF
             text-shadow: 0px 0px 1px #FFFFFF
@@ -48,11 +49,65 @@ ul, li
             display: flex
             flex-direction: column
             align-items: center
-            font-size: 2.5em
+            font-size: 3em
             font-weight: 350
             color: #FFFFFF
 
+
+
+//MEDIA QUERIES //
+
+//Exception 
+$breakpoint-l: 1105px
+@media screen and (max-width: $breakpoint-l)
+
+    .tableau__container 
+        width: 90%
+        .tableau
+            &__card
+                padding: 10px 10px 0px 10px
+
+
                
+// Media Queries MEDIUM DEVICES
+$breakpoint-medium: 1024px
+@media screen and (max-width: $breakpoint-medium)
+
+    .tableau__container 
+        .tableau
+            width: 100%
+            padding: 0
+            flex-direction: column
+            align-items: center
+
+            &__card
+                width: 100%
+                align-items: center
+            ul
+                flex-direction: row
+                gap: 25px
+
+
+  
+      
+// Media Queries SMALL DEVICES
+$breakpoint-small: 768px
+@media screen and (max-width: $breakpoint-small)
+
+    .tableau__container 
+        .tableau
+            &__card
+                width: 90%
+                padding: 5px
+
+            .ant-card-head  
+                font-size: 2.5em    
+            ul
+                flex-direction: row
+                gap: 15px
+                font-size: 1.5em    
+
+
 
 
         

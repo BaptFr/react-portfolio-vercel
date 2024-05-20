@@ -15,13 +15,13 @@
       "titre": "BACK-END",
       "competences": [
         { "nom": "NodeJs"},
-        { "nom": "Express"}
+        { "nom": "Express"},
+        { "nom": "MongoDB"}
       ]
     },
     {
       "titre": "OUTILS",
       "competences": [
-        { "nom": "MongoDB"},
         { "nom": "GitHub" },
         { "nom": "Postman"},
         { "nom": "Figma"}

@@ -1,80 +1,110 @@
+$full: 100%
+$primary-color: #FFFFFF
+$second-color: #DEB992
+$third-color: #010B13
+$xxs: 0.5em
+$xs: 1em
+$s: 1.5em
+$m: 2em
+$l: 2.5em
+$xl: 3em
+$xxl: 4.5em
+
+$Bs: 10px
+$Bm: 20px
+$Bl: 30px
+$Bxl: 40px
+
+= flex-column-center ($direction: column, $justify: center, $align: center)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align
+
+= flex-column-space ($direction: column, $justify: space-between, $align: center)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify
+    lign-items: $align
+
+= flex-row-center ($direction: row, $justify: center, $align: center)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align
+
+
+
+
 p 
   margin: 10px 0px
   padding: 0
-  color: #FFFFFF
-
-
-
+  color: $primary-color
 
 .home__container
-    width: 100%
+    width: $full
     display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: space-between
-    background-color: #010B13
+    +flex-column-center 
+    background-color: $third-color
     gap: 20px
     
     .home__animation
-        margin: 50px 0px 0px 0px
-        width : 100%
+        margin: 50px 0px
+        width : $full
         display: flex
         align-items: flex-start
         justify-content: center
-        font-size: 4.5em
+        font-size: $xxl
         text-align: center
-        color: #FFFFFF
+        color: $primary-color
 
     .introduction__section
-        margin-bottom: 50px
-        width: 100%
-        display: flex
-        flex-direction: row
-        justify-content: center
-        align-items: center
-        gap: 10px
+        margin: 0px 100px 50px 150px
+        width: $full
+        +flex-row-center
+        gap: 50px
 
         .introduction__text
             width: 50%
-            font-size: 2em
+            font-size: $m
             line-height: 1.4
-            color: #FFFFFF
+            color: $primary-color
 
         .introduction__picture
             width: 250px
             height: 380px
-            margin: 0px 100px 0px 100px 
+            margin: 0px 50px
             display: flex
             justify-content: center
+            align-items: center
             border: none
             border: 10px solid black
+            box-shadow: 0px 2px 50px black
             border: none
-            border-radius: 10px
-            background-color: #000000
+            border-radius: $Bs
+            background-color: $primary-color
             overflow: hidden         
 
             img
                 width: 105%
                 object-fit: cover 
                 
-                
-
     .links__section
         .links__perso
             min-width: 300px
+            margin: 50px 0px 150px 0px
             padding: 15px
-            display: flex
-            flex-direction: row
+            +flex-row-center
             gap: 60px
-            border: 0.5px solid #DEB992
-            border-radius: 10px
-            box-shadow: 0px 2px 7px #DEB992
-            background-color: #000B13
+            border: 0.5px solid $second-color
+            border-radius: $Bs
+            box-shadow: 0px 2px 7px $second-color
+            background-color: $third-color
 
             .links__button_container:hover
                 transform: scale(1.1)
                 p
-                    text-shadow: 0px 0px 5px #DEB992
+                    text-shadow: 0px 0px 5px $second-color
               
             .links__button_container:active    
                 transform: scale(0.9)
@@ -82,16 +112,14 @@ p
                 margin: 0px
                 text-decoration: none
                 text-align: center
-                font-size: 2em
+                font-size: $m
                 font-weight: 450
-                color: #DEB992
+                color: $second-color
 
 
     .formation__section
-        width: 100%
-        display: flex
-        flex-direction: column
-        align-items: center
+        width: $full
+        +flex-column-center 
         hr
             width: 190px
 
@@ -100,41 +128,37 @@ p
             left: 0
             width: 78%
             height: 100%
-            border-radius: 30px
+            border-radius: $Bl
             background-image: url('../../assets/year-pic.webp')
             background-position: center
+            
 
         .formation__content
-            width: 100%
+            width: $full
             padding: 30px 0px 
             display: flex
-            flex-direction: column
-            justify-content: center
-            align-items: center
-            border: 2px solid #DEB992
-            border-radius: 30px
-            box-shadow: 1px 2px 8px #DEB992
+            +flex-column-center 
+            border: 2px solid $second-color
+            border-radius: $Bl
+            box-shadow: 1px 2px 8px $second-color
             background-color: rgba(0, 0, 0, 0.9)
-            color: white
+            color: $primary-color
             img
                 width: 150px
-                border: 2px solid #FFFFFF
+                border: 2px solid $primary-color
                 border-radius: 15px
             p   
-                font-size: 2.5em
+                font-size: $l
                 font-weight: 400
    
-            .formation__text
-                font-size: 2em
-                color: white
-        
+      
 
     .skills__section
-        width: 100%
+        width: $full
+        max-width: 1550px
         margin-top: 150px
         display: flex
-        flex-direction: column
-        align-items: center
+        +flex-column-center 
         gap: 0px
         hr
             width: 230px
@@ -142,54 +166,47 @@ p
         .skills__content
             padding-bottom: 20px
             width: 90%
-            display: flex
-            flex-direction: column
-            align-items: center
+            +flex-column-center 
             background-color: #F4F3EF
-            border: 1px solid #DEB992
-            border-radius: 30px
-            box-shadow: 1px 2px 8px #DEB992
-            background-color: #010B13
-           
-            
+            border: 1px solid $second-color
+            border-radius: $Bl
+            box-shadow: 1px 2px 8px $second-color
+            background-color: $third-color
+                  
     
     .redirection__section
+        width: 90%
         margin-top: 150px
+        +flex-column-center 
         background-color: transparent
   
 
         .redirection__link
             max-width: 1440px
-            min-width: 500px
-            width: 1100px
+            width: 100%
             height: 500px
-            display: flex
-            flex-direction: column
-            align-items: center
-            justify-content: center
-            border: 1.5px solid #DEB992
-            border-radius: 40px
-            box-shadow: 1px 2px 8px #DEB992
-            background-color:  #010b13
+            +flex-column-center 
+            border: 1.5px solid $second-color
+            border-radius: $Bxl
+            box-shadow: 1px 2px 8px $second-color
+            background-color: $third-color
                
             .redirection__button
                 width: 25%
                 height: 20%
                 min-width: 300px
                 padding: 18px
-                display: flex
-                align-items: center
-                justify-content: center
-                border-radius: 10px
+                +flex-column-center 
+                border-radius: $Bs
                 background-color: #000000
-                box-shadow: 0 2px 10px #FFFFFF
-                border: 1px solid #DEB992
+                box-shadow: 0 2px 10px $primary-color
+                border: 1px solid $second-color
               
                 a
                     text-decoration: none
                     p
                         text-align: center
-                        color: #FFFFFF
+                        color: $primary-color
                         font-size: 3.5em
                         font-weight: 400
                     
@@ -200,16 +217,114 @@ p
                 transform: scale(1.05)
             .redirection__button:active
                 transform: scale(0.9)
-                box-shadow: 4px 4px 40px #FFFFFF
+                box-shadow: 4px 4px 40px $primary-color
+
 
 #redirection__projet
     //background-image: url('../../assets/fond-2.webp')
 #redirection__contact
-    //background-image: url('../../assets/fond-1.webp')
+   // background-image: url('../../assets/fond-1.webp')
+    
+#bottom__section
+    margin-bottom: 100px
+
+
+
+// MEDIA QUERIES //
+
+
+// Media Queries MEDIUM DEVICES
+$breakpoint-medium: 1024px
+@media screen and (max-width: $breakpoint-medium)
+
+  .home__container  
+    background-color: red
+        
+    .home__animation
+        align-items: center
+
+    .introduction__section
+        margin: 0px 
+        flex-direction: column-reverse
+        gap: 0
+        .introduction__text
+            width: 90%
+            margin-top: 25px
+            text-align: center
+            font-size: $m
+            p
+                margin: 0px 20px
+           
+        .introduction__picture
+            width: 200px
+            height: 250px
+            img 
+                transform: translate(0px, 25px)
+            
+    .links__section
+        .links__perso
+            margin: 30px 0px 150px 0px
+            gap: 40px
+
+    .formation__section
+            .formation__background
+                background-size: cover
+    
+    
+
+// Media Queries SMALL DEVICES
+$breakpoint-small: 768px
+@media screen and (max-width: $breakpoint-small)
+
+   .home__container  
+        background-color: green
+        gap: 0
+
+        .home__animation
+            font-size: $xl
+            margin: 25px 0px
+
+        .introduction__section
+            .introduction__text
+                width: 80%
+                margin-top: 25px
+                font-size: $s
+                font-weight: 350
+        
+        .links__section
+            .links__perso
+              +flex-column-center
+              p
+                font-size: $l
+    
+        
+        .formation__section    
+            .formation__background
+                background-size: contain
+            .formation__content
+                img
+                    margin-bottom: 25px
+                p
+                    font-size: $s
+                    font-weight: 350
+        
+        .redirection__section
+            .redirection__link
+                height: 400px
+                .redirection__button
+                    min-width: 200px
+                    height: 15%
+                    a 
+                        p 
+                        font-size: $xxs
+
 
 
         
-#bottom__section
-    margin-bottom: 100px
+   
+
+
+
+
     
 

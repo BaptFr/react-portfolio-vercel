@@ -5,9 +5,9 @@ import ProjetDisplay from  '../../components/cards/projet-display.jsx';
 import LogoColor from '../../components/logos/logo-color.jsx';
 import projetsData from '../../datas/projets.json'
 
-import  KasaPic from '../../assets/projets-pictures/kasa-site.jpg';
-import  NinaPic from '../../assets/projets-pictures/nina-car-site.jpg';
-import  MvgPic from '../../assets/projets-pictures/mvg-site.jpg';
+import  KasaPic from '../../assets/projets-pictures/kasa-site.webp';
+import  NinaPic from '../../assets/projets-pictures/nina-car-site.webp';
+import  MvgPic from '../../assets/projets-pictures/mvg-site.webp';
 import  ReactLogoC from '../../assets/logos/react-logo-col.svg';
 import  SassLogoC from '../../assets/logos/sass-logo-col.svg';
 import  NodeLogoC from '../../assets/logos/node-logo-col.svg';
@@ -30,7 +30,7 @@ function Projets() {
 
     <section id='projets__section' className='projets__section'>
 
-    {/* INTRO & ANIMATION */}
+      {/* INTRO & ANIMATION */}
       <div className='projets__page__banner'>
         <SectionBanner title="Mes projets" />
       </div>
@@ -44,9 +44,10 @@ function Projets() {
             typeSpeed={120}
           />
         </p>
-        <p>Bienvenue sur la page des projets <br/>
-          Voici trois projet offrants un aperçu de mes réalisations <br/>
-        </p>
+        <br/>
+        <p>Bienvenue sur la page des projets </p>
+        <p>Voici trois projet offrants un aperçu de mes réalisations </p>
+        
         <hr/> 
         
       </div>
@@ -72,7 +73,7 @@ function Projets() {
           </div>
         </div>
         <div className='projet__pic__container'>
-          <img src={KasaPic} alt={'site-kasa'}/>
+          <img src={KasaPic} alt={'site-kasa'} loading="lazy"/>
           <div className='hover__content' >
             <div className='hover__title'>
               <p> {projetId1.title}</p>
@@ -107,7 +108,7 @@ function Projets() {
           </div>
         </div>
         <div className='projet__pic__container' >
-          <img src={MvgPic} alt={'site-monvieu-grimoire'}/>
+          <img src={MvgPic} alt={'site-monvieu-grimoire'} loading="lazy"/>
           <div className='hover__content'>
             <div className='hover__title'>
               <p> {projetId2.title}</p>
@@ -139,7 +140,7 @@ function Projets() {
           </div>
         </div>
         <div className='projet__pic__container'>
-          <img src={NinaPic} alt={'site-photographe'}/>
+          <img src={NinaPic} alt={'site-photographe'} loading="lazy"/>
           <div className='hover__content'>
             <div className='hover__title'>
               <p> {projetId3.title}</p>

@@ -4,7 +4,7 @@
     flex-direction: column
     align-items: center
     justify-content: center
-    gap: 25px
+    gap: 20px
     color:#FFFFFF
 
     .text__container
@@ -15,8 +15,8 @@
         
         .projet__title
             margin: 0
-            padding: 15px 0px
-            font-size: 7em
+            padding-top: 15px 
+            font-size: 5em
             font-weight: 500
             text-align: center
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)
@@ -31,7 +31,7 @@
             text-align: center
 
     .projet__missions__container
-        width: 100%
+        width: 80%
         padding: 20px
         margin-bottom: 20px
         display: flex
@@ -53,9 +53,26 @@
         .projet__missions
             text-align: center
             color: #DEB992
-            font-size: 2em
+            font-size: 1.6em
             line-height: 1.2
-            font-weight: 400
+            font-weight: 350
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)
 
-        
+
+
+    
+// Media Queries SMALL DEVICES
+$breakpoint-small: 768px
+@media screen and (max-width: $breakpoint-small)
+    .description__container
+        .text__container
+            .projet__title
+                font-size: 3.5em
+                
+        .projet__missions__container
+            width: 90%
+            .projet__missions
+                margin-top: 20px
+                font-size: 1.4em 
+                line-height: 1.3  
+

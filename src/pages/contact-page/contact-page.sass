@@ -13,4 +13,59 @@
         display: flex
         flex-direction: column
         align-items: center
-        justify-content: space-beteween
+
+
+// MEDIA QUERIES //
+
+// Media Queries MEDIUM DEVICES
+$breakpoint-medium: 1024px
+@media screen and (max-width: $breakpoint-medium)
+
+    .contact__page__container
+        .contact__banner
+            padding-top: 40px
+            hr
+                display: none
+
+    .contact__container
+        .contact__form__container
+            button
+                width: 20%
+                padding: 9px
+                font-size: 0.9em
+            input, textarea
+                min-width: 200px
+
+                
+
+            .contact__form 
+                gap: 30px
+            
+
+      
+
+// Media Queries SMALL DEVICES
+$breakpoint-small: 768px
+@media screen and (max-width: $breakpoint-small)   
+  
+    .contact__container
+        .contact__form__container 
+            
+            input, textarea
+                width: 250px
+                
+            button
+            label
+                    font-size: 1.2em
+                    font-weight: 350
+                
+            .contact__form
+               
+                label
+                    text-align: center  
+                    white-space: nowrap
+               
+                .contact__form__name, .contact__form__email, .contact__form__message 
+                    align-items: center
+                    flex-wrap: no-wrap
+

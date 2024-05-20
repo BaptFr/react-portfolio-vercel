@@ -50,7 +50,6 @@ function Home() {
       <div className='introduction__picture' >
         <img src={IntroPic} alt='intro-face'/> 
       </div>  
-      
     </section> 
       
 
@@ -87,13 +86,13 @@ function Home() {
     </section>
 
     { /*Section FORMATION*/}
-    <section className='formation__section'>
+    <section className='formation__section' id='formation__section'>
       <div className='formation__banner'>
         <SectionBanner  title="FORMATION" id='formation'/>
       </div>
       <div className='formation__background'>
         <div className='formation__content'>
-            <img src={OcrLogo} alt='openclassrooms' />
+            <img src={OcrLogo} alt='openclassrooms' loading="lazy"/>
             <p>- Cursus de développeur web -</p>
             <p> Formation certifiante RNCP</p>
             <p>Diplôme de niveau 5 (bac +2)</p>
