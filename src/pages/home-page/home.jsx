@@ -48,7 +48,7 @@ function Home() {
         </p>
       </div> 
       <div className='introduction__picture' >
-        <img src={IntroPic} alt='intro-face'/> 
+        <img src={IntroPic} alt='visage'/> 
       </div>  
     </section> 
       
@@ -93,7 +93,7 @@ function Home() {
       <div className='formation__background'>
         <div className='formation__content'>
             <img src={OcrLogo} alt='openclassrooms' loading="lazy"/>
-            <p>- Cursus de développeur web -</p>
+            <p>- DÉVELOPPEUR WEB -</p>
             <p> Formation certifiante RNCP</p>
             <p>Diplôme de niveau 5 (bac +2)</p>
         </div>

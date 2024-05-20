@@ -1,23 +1,22 @@
+@import '../../style/variables-mixins.sass'
+
 body 
-    width: 100%
+    width: $full
     min-height: 100vh
     margin: 0
-    font-family: "Yanone Kaffeesatz", sans-serif
+    font-family: $f-family
     font-weight: 300
     background-color: #000000
    
     
 header
-    width: 100%
+    width: $full
     height: 80px
-    display: flex
-    justify-content: space-between
-    flex-direction: row
-    align-items: center
+    +flex-row-space
     flex-wrap: nowrap
     color: #0B0C10
     background-color: #000000
-    border-bottom: 1px solid  #deb992
+    border-bottom: +border-second-color
   
     .navbar
         margin: 10px 100px 0px 0px
@@ -30,15 +29,15 @@ header
         button
             text-decoration: none
             border: none
-            font-size : 1.5em
+            font-size : $s
             font-weight: 300
             text-shadow: 10px 10px 20px #000000
             color: #C5C6C7
             background-color: transparent
-            font-family: "Yanone Kaffeesatz", sans-serif
+            font-family: $f-family
                 
         button:hover
-            color: #FFFFFF
+            color: $primary-color
             cursor: pointer
 
         .active button
@@ -48,20 +47,16 @@ header
             
             
 footer
-    width: 100%
+    width: $full
     margin-top: 30px
     display: flex
     align-items: center
     justify-content: center
     padding: 10px 0px 
     
-
     .footer__containt
         padding-top: 20px
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: center
+        +flex-column-center
         font-size: 30px
         color: #FFFFFF
         text-align: center
@@ -73,8 +68,9 @@ footer
             flex-direction: row
         img
             margin: 0 
-            width:20px
-       
+            width: 20px
+
+
 // MEDIA QUERIES //
 
 // Media Queries MEDIUM DEVICES

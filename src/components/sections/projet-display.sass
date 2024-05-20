@@ -1,73 +1,71 @@
+@import '../../style/variables-mixins.sass'
+
 .description__container
-    width: 100%
+    width: $full
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
     gap: 20px
-    color:#FFFFFF
-
+    color: $primary-color
+    
     .text__container
-        width: 100%
-        display: flex
-        flex-direction: column
-        align-items: center
+        width: $full
+        +flex-column-center
         
         .projet__title
             margin: 0
-            padding-top: 15px 
+            padding-top: 20px 
             font-size: 5em
             font-weight: 500
             text-align: center
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)
 
         p
-            font-size: 2em
+            font-size: $m
             font-weight: 350
-            color: #FFFFFF
+            color: $primary-color
             
         .projet__description
-            width: 100%
+            width: $full
             text-align: center
 
     .projet__missions__container
         width: 80%
         padding: 20px
         margin-bottom: 20px
-        display: flex
-        flex-direction: column
-        align-items: center
-        border: 1px solid #DEB992
+        +flex-column-center
+        +border-second-color
         border-radius: 30px
         background: rgba(0, 0, 0, 0.7)
         box-shadow: 5px 5px 10px #000000
 
         .projet__missions__title
             margin: 0
-            font-size: 2.5em
+            font-size: $l
             font-weight: 400
-            color: #FFFFFF
+            color: $primary-color
             text-align: center
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
                  
         .projet__missions
             text-align: center
-            color: #DEB992
+            color: $second-color
             font-size: 1.6em
             line-height: 1.2
             font-weight: 350
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)
 
 
+// MEDIA QUERIES //
 
-    
 // Media Queries SMALL DEVICES
 $breakpoint-small: 768px
 @media screen and (max-width: $breakpoint-small)
     .description__container
         .text__container
             .projet__title
-                font-size: 3.5em
+                font-size: 3.9em
                 
         .projet__missions__container
             width: 90%

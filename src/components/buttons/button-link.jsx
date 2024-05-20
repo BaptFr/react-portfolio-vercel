@@ -4,7 +4,7 @@ import './button-link.sass'
 function ButtonLink({source}) {
     return(
         <div className="button__container">
-          <img src={source} alt='logo-du-lien'/>
+          <img src={source} alt='logo-lien-interne'/>
         </div>
     )
 }

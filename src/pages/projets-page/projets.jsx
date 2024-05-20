@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import SectionBanner from '../../components/banners/section-banner.jsx';
-import ProjetDisplay from  '../../components/cards/projet-display.jsx';
+import ProjetDisplay from  '../../components/sections/projet-display.jsx';
 import LogoColor from '../../components/logos/logo-color.jsx';
 import projetsData from '../../datas/projets.json'
 

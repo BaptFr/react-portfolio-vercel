@@ -1,32 +1,12 @@
-=logo-xs ($width: 30px, $height: 30px)
-    width: $width
-    heigth: $height
-
-= logo-s ($width: 50px, $height: 50px)
-    width: $width
-    heigth: $height
-
-= logo-inter ($width: 85px, $height: 85px)
-    width: $width
-    heigth: $height
-
-= logo-m ($width: 100px, $height: 100px)
-    width: $width
-    heigth: $height
-
-= logo-l ($width: 150px, $height: 150px)
-    width: $width
-    heigth: $height
-
-
+@import '../../style/variables-mixins.sass'
 
 img 
     display: block
     
     &.small 
-        +logo-s
+        +logos-m
     &.medium 
-        +logo-m
+        +logos-xl
     &.large 
-        +logo-l
+        +logos-xxl
     

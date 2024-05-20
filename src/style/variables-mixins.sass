@@ -1,0 +1,90 @@
+//VAR//
+
+$f-family: "Yanone Kaffeesatz", sans-serif
+
+$primary-color: #FFFFFF
+$second-color: #DEB992
+$third-color: #010B13
+
+$full: 100% 
+$semi : 50%
+
+$xxs: 0.5em
+$xs: 1em
+$s: 1.5em
+$m: 2em
+$l: 2.5em
+$xl: 3em
+$xxl: 4.5em
+
+//Borders
+$Bs: 10px
+$Bm: 20px
+$Bl: 30px
+$Bxl: 40px
+
+
+$logoS: 75px
+$logoM: 100px
+$logoL: 150px
+
+// MIXINS //
+
+= logos-s ($width: 30px, $height: 30px)
+    width: $width
+    height: $height
+
+= logos-m ($width: 50px, $height: 50px)
+    width: $width
+    height: $height
+
+= logos-l ($width: 80px, $height: 80px)
+    width: $width
+    height: $height
+
+= logos-inter ($width: 85px, $height: 85px)
+    width: $width
+    heigth: $height
+
+= logos-xl ($width: 100px, $height: 100px)
+    width: $width
+    heigth: $height
+
+= logos-xxl ($width: 150px, $height: 150px)
+    width: $width
+    heigth: $height
+
+
+= flex-column-center ($direction: column, $justify: center, $align: center)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align
+
+= flex-column-space ($direction: column, $justify: space-between, $align: center)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify
+    lign-items: $align
+
+= flex-row-center ($direction: row, $justify: center, $align: center)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align
+
+= flex-row-space ($direction: row, $justify: space-between, $align: center)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align
+
+= flex-row-space-around ($direction: row, $justify: space-around, $align: center)
+    display: flex
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align
+
+= border-second-color ($width: 1px, $style: solid, $color: #DEB992)
+  border: $width $style $color
+

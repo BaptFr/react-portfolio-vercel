@@ -1,44 +1,39 @@
-.error__container
-  width:100%
-  padding: 139px 0px
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-  align-items: center
-  gap: 130px
-  color: #E75D50
-  
+@import '../../style/variables-mixins.sass'
 
+.error__container
+  width: $full
+  padding: 100px 0px
+  +flex-column-space
+  gap: 130px
+  background-color: $primary-color
 
   p
     margin:0
     text-align: center
+    color: #E75D50
    
     
 .error__type
-  width: 100%
+  width: $full
   margin: 0
   font-size: 500px
-  font-style: normal
   font-weight: 700
   
 
 .error__message
-  font-size: 60px
+  font-size: $xl
   font-weight: 500
   
- 
-
 .home__link
-  margin: 0
+  +flex-row-center
+  margin: 0px 50px
+  padding: 20px
   text-decoration: none
-  text-decoration: none
-  border: none
-  border-bottom: 1px solid 
-  color: #DEB992
-  font-size: 80px
-  font-weight: 500
-
+  border: 5px solid  #E75D50
+  color: $second-color
+  font-size: $xl
+  font-weight: 700
+  
 .home__link:hover
   transform: scale(1.05)
 
@@ -46,14 +41,13 @@
   transform: scale(1)
 
 
-
+// MEDIA QUERIES //
 
 // Media Queries MEDIUM DEVICES
 $breakpoint-medium: 1024px
 @media screen and (max-width: $breakpoint-medium)
   .error__container
-    margin: 120px 0px
-    gap: 120px
+    gap: 100px
 
   .error__type
     font-size: 220px
@@ -62,23 +56,22 @@ $breakpoint-medium: 1024px
     font-size: 36px
   
 
-
 // Media Queries SMALL DEVICES
 $breakpoint-small: 768px
 @media screen and (max-width: $breakpoint-small)
   .error__container
-    margin: 113px 0px
-    gap: 100px
-
+    gap: 80px
+    
+  
   .error__type
-    font-size: 96px
+    font-size: 180px
 
   .error__message
-    font-size: 18px
-    width: 90%
-  
+    font-size: $l
+    padding: 0px 20px
+
   .home__link
-    font-size: 15px
+    font-size: $m
   
 
 

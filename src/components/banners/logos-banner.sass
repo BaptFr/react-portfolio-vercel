@@ -1,23 +1,19 @@
-$logoS: 75px
-$logoM: 100px
-$logoL: 150px
+@import '../../style/variables-mixins.sass'
 
 .logos
     position: relative
-    width: 100%
+    width: $full
     margin-top: 50px
-    display: flex
-    flex-direction: row
-    justify-content: space-between
+    +flex-row-space
     flex-wrap: nowrap
     overflow: hidden
     gap:0
-    background-color: #FFFFFF
+    background-color: $primary-color
     opacity: 0.7
-    box-shadow:  0px 0px 10px #DEB992
+    box-shadow:  0px 0px 10px $second-color
       
 .logos__slide 
-    margin: 0px 0px 0px 0px
+    margin: 0
     padding: 10px 0px
     display: flex
     gap: 120px
@@ -27,7 +23,7 @@ $logoL: 150px
     img
         width: $logoL
         height: auto
-        margin: 0px
+        margin: 0
     #react-logo
         margin-left: 100px
       
