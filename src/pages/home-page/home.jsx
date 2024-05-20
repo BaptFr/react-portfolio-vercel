@@ -11,6 +11,10 @@ import MailLogo from'../../assets/logos/mail-logo-col.svg';
 import WorkLogo from'../../assets/logos/work-logo-col.svg';
 import FormationLogo from '../../assets/logos/graduation-logo-col.svg';
 import SkillsLogo from '../../assets/logos/skills-logo-col.svg';
+import OcrLogo from '../../assets/logos/ocr-logo.webp';
+
+import IntroPic from '../../assets/photo-profil.webp';
+
 import competencesData from '../../datas/competences.json';
 import './home.sass';
 
@@ -30,22 +34,29 @@ function Home() {
     </div>
  
     <section className='introduction__section'>
+      
       <div className='introduction__text'> 
-        <p> Bienvenue sur mon portfolio ! <br/>
-        <br/>
-          Actuellement développeur web junior, <br/>
-          vous pouvez explorer ici une partie de mes travaux. 
+        <p> Bienvenue sur mon portfolio ! </p>
+        <p>
+          Après une ancienne vie dans le commerce,  j'ai effectué une reconversion <br/> 
+          professionnelle pour me plonger dans le développement web.  <br/>
+          Explorez ici une sélection de projets qui témoignent de mon parcours, <br/>
+          de ma formation et de mes compétences.   <br/>
           <br/>
-          Je reste disponible si vous souhaitez me contacter <br/>
-          pour toute demande d'informations ou de collaboration. 
+          Aujourd'hui développeur web junior je suis ouvert aux nouvelles opportunités! <br/>
+          N'hésitez pas à me contacter pour toute demande d'informations ou de collaboration. 
         </p>
       </div> 
       <div className='introduction__picture' >
-        <img src='..' alt='profil-cv'/>
-      </div>          
+        <img src={IntroPic} alt='intro-face'/> 
+      </div>  
+      
     </section> 
+      
+
   
 
+    { /*Section de liens globaux */}
     <section className='links__section'>
       <div className='links__perso'>
         <div className='links__button_container'>
@@ -58,7 +69,7 @@ function Home() {
           <a href='#skills__section'> 
             <ButtonLink source={SkillsLogo}/>
           </a>
-          <p>Skills</p>
+          <p>Compétences</p>
         </div>
         <div className='links__button_container'>
           <NavLink to='/projets' >
@@ -75,23 +86,25 @@ function Home() {
       </div> 
     </section>
 
-    <div className='nav__vertical__logo'>
-        *** LOGO POUR TRANSITION VERTICAL ***
-    </div> 
-
-    <section id='formation__section' className='formation__section'>
+    { /*Section FORMATION*/}
+    <section className='formation__section'>
       <div className='formation__banner'>
         <SectionBanner  title="FORMATION" id='formation'/>
       </div>
-      <div className='formation__content'>
-        <p>aaaa</p>
-        
+      <div className='formation__background'>
+        <div className='formation__content'>
+            <img src={OcrLogo} alt='openclassrooms' />
+            <p>- Cursus de développeur web -</p>
+            <p> Formation certifiante RNCP</p>
+            <p>Diplôme de niveau 5 (bac +2)</p>
+        </div>
       </div>
     </section>
 
+    { /*Section TACKS & SKILLS*/}
     <section id='skills__section' className='skills__section'>
       <div className='skills__banner'>
-        <SectionBanner  title="SKILLS" id='skills'/>
+        <SectionBanner  title="COMPÉTENCES" id='skills'/>
       </div>
       <div className='skills__content'>
         <div className='tableau__container'>
@@ -101,7 +114,7 @@ function Home() {
       </div>
     </section>
 
-
+    { /*Section LIEN PAGE PROJET*/}
     <section className='redirection__section'>
       <div className='redirection__banner'>
         <SectionBanner  title='PROJETS'/>
@@ -115,7 +128,7 @@ function Home() {
       </div>
     </section>
 
-
+    { /*Section LIEN CONTACT*/}
     <section className='redirection__section' id="bottom__section">
       <div className='redirection__banner'>
         <SectionBanner  title='CONTACT'/>

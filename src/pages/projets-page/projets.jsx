@@ -92,7 +92,7 @@ function Projets() {
           <ProjetDisplay projetId={2}   />
           <div className='projet__technologies__container'>
             <div className='hover__technologies'>
-              <p>Node JS </p> 
+              <p> Node JS </p> 
               <p> MongoDB </p> 
               <p> POSTMAN</p>
               <p> GithHub</p>

@@ -1,3 +1,10 @@
+p 
+  margin: 10px 0px
+  padding: 0
+  color: #FFFFFF
+
+
+
 
 .home__container
     width: 100%
@@ -6,13 +13,14 @@
     align-items: center
     justify-content: space-between
     background-color: #010B13
+    gap: 20px
     
     .home__animation
         margin: 50px 0px 0px 0px
+        width : 100%
         display: flex
         align-items: flex-start
         justify-content: center
-        width : 100%
         font-size: 4.5em
         text-align: center
         color: #FFFFFF
@@ -23,23 +31,33 @@
         display: flex
         flex-direction: row
         justify-content: center
-        gap: 50px
+        align-items: center
+        gap: 10px
 
         .introduction__text
-            width: 60%
-            padding: 0px 30px
+            width: 50%
             font-size: 2em
             line-height: 1.4
-            text-shadow: 0px 0px 2px #FFFFFF
             color: #FFFFFF
 
         .introduction__picture
-            width: 300px
-            height: 300px
-            border: 1px solid #DEB992
-            box-shadow: 0px 2px 8px #DEB992
-            border-radius: 50%
+            width: 250px
+            height: 380px
+            margin: 0px 100px 0px 100px 
+            display: flex
+            justify-content: center
+            border: none
+            border: 10px solid black
+            border: none
+            border-radius: 10px
             background-color: #000000
+            overflow: hidden         
+
+            img
+                width: 105%
+                object-fit: cover 
+                
+                
 
     .links__section
         .links__perso
@@ -68,14 +86,48 @@
                 font-weight: 450
                 color: #DEB992
 
-    .nav__vertical__logo
-        margin-top: 50px
-        display: flex
-        color:#FFFFFF
 
     .formation__section
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
         hr
-            width: 350px
+            width: 190px
+
+        .formation__background
+            top: 0
+            left: 0
+            width: 78%
+            height: 100%
+            border-radius: 30px
+            background-image: url('../../assets/year-pic.webp')
+            background-position: center
+
+        .formation__content
+            width: 100%
+            padding: 30px 0px 
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            border: 2px solid #DEB992
+            border-radius: 30px
+            box-shadow: 1px 2px 8px #DEB992
+            background-color: rgba(0, 0, 0, 0.9)
+            color: white
+            img
+                width: 150px
+                border: 2px solid #FFFFFF
+                border-radius: 15px
+            p   
+                font-size: 2.5em
+                font-weight: 400
+   
+            .formation__text
+                font-size: 2em
+                color: white
+        
 
     .skills__section
         width: 100%
@@ -86,8 +138,7 @@
         gap: 0px
         hr
             width: 230px
-
-             
+     
         .skills__content
             padding-bottom: 20px
             width: 90%
@@ -152,9 +203,9 @@
                 box-shadow: 4px 4px 40px #FFFFFF
 
 #redirection__projet
-    background-image: url('../../assets/fond-2.jpg')
+    //background-image: url('../../assets/fond-2.webp')
 #redirection__contact
-    background-image: url('../../assets/fond-1.jpg')
+    //background-image: url('../../assets/fond-1.webp')
 
 
         
