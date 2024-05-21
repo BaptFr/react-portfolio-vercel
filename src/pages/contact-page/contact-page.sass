@@ -1,15 +1,36 @@
 @import '../../style/variables-mixins.sass'
 
 .contact__page__container
-    background-color: #010B13
-
+    background-color: $third-color
     .contact__banner
         padding-top: 50px
         hr
             display: none
 
+    .contact__page__text
+        +flex-column-center
+        margin: 50px 300px
+        +intro-text
+        font-size: $xl
+        p 
+            text-align: center
+
+    a
+        .button__container   
+            img
+                width: 150px
+                height: 150px
+                +border-second-color
+               
+                border-radius: 10px
+            img:hover
+                box-shadow:  1px 1px 10px $second-color
+            img:active
+                transform: scale(0.9)
+   
     .contact__container
         margin: 0
+        height: 100%
         +flex-column-center
 
 
@@ -18,12 +39,15 @@
 // Media Queries MEDIUM DEVICES
 $breakpoint-medium: 1024px
 @media screen and (max-width: $breakpoint-medium)
-
     .contact__page__container
         .contact__banner
             padding-top: 40px
             hr
                 display: none
+            
+        .contact__page__text
+            margin: 50px 100px
+            font-size: $l
 
     .contact__container
         .contact__form__container
@@ -33,9 +57,6 @@ $breakpoint-medium: 1024px
                 font-size: 0.9em
             input, textarea
                 min-width: 200px
-
-                
-
             .contact__form 
                 gap: 30px
             
@@ -48,17 +69,10 @@ $breakpoint-small: 768px
   
     .contact__container
         .contact__form__container 
-            
             input, textarea
                 width: 250px
-                
-            button
-            label
-                    font-size: 1.2em
-                    font-weight: 350
-                
+    
             .contact__form
-               
                 label
                     text-align: center  
                     white-space: nowrap

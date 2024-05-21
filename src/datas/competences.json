@@ -24,6 +24,7 @@
       "competences": [
         { "nom": "GitHub" },
         { "nom": "Postman"},
+        {"nom" : "Wave"},
         { "nom": "Figma"}
       ]
     }

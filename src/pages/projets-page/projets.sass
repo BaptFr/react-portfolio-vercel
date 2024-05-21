@@ -20,12 +20,13 @@ h2
         margin: 100px 50px 0px 50px
         text-align: center
         color: $primary-color
-        font-size: $l
+        font-size: $m
         p
             font-size: $m
+            line-height: 1.6
 
         .intro__animation
-            margin-top: 10px
+            margin-top: 75px
             margin-bottom: 20px
             font-size: $xs
             font-weight: 300
@@ -34,7 +35,7 @@ h2
             text-shadow: 0 0 6px #000000
 
         hr
-            margin-top: 150px
+            margin-top: 50px
             margin-bottom: 200px
 
 
@@ -82,8 +83,8 @@ h2
         background: rgba(0, 0, 0, 0.8)
 
         .projet__technologies__title
-            margin: 0
-            font-size: 2.5em
+            margin-top: 15px
+            font-size: $l
             font-weight: 400
             color: $primary-color
             text-align: center
@@ -92,9 +93,7 @@ h2
         .projet__technologies
             width: $full
             margin-top: 40px
-            display: flex
-            flex-direction: row
-            justify-content: space-around
+            +flex-row-space-around
             flex-wrap: no-wrap
             
 
@@ -117,6 +116,7 @@ h2
                 color: $primary-color
                 font-size: $s
                 font-weight: 400
+              
 
         &:hover .hover__technologies
             display: flex
@@ -128,7 +128,7 @@ h2
         width: 40%
         min-height: 400px
         aspect-ratio: 4/3
-        margin-top: 75px
+        margin: 75px 0px
         display: flex   
         justify-content: flex-start
         align-items: center
@@ -155,7 +155,7 @@ h2
             align-items: center 
             background-color: rgba(0, 0, 0, 0.9)
             +border-second-color
-            font-size: 1.5rem
+            font-size: $s
             border-radius: 40px
             z-index: 1
             
@@ -165,19 +165,22 @@ h2
         .hover__title
             width: $full
             text-align: center
-            font-size: 3.5em
+            font-size: $l
             font-weight: 400
             color: $primary-color
      
         .hover__link
-            padding: 30px
+            padding: 30px 30px
+            +flex-column-center
+            gap: 25px
+
             button
                 opacity: 1
-                padding: 25px 30px
+                padding: 20px 10px
                 text-align: center
                 +border-second-color
                 border-radius: 10px
-                font-size: 1.3em
+                font-size: $xs
                 background: #000000
                 color: $primary-color
                 box-shadow: 0px 0px 10px $primary-color
@@ -195,7 +198,8 @@ $breakpoint-medium: 1024px
     
     .projets__section
         .projets__intro
-            font-size: $m
+            p
+                font-size: $s
             hr
                 margin-top: 100px
                 margin-bottom: 150px
@@ -212,6 +216,9 @@ $breakpoint-medium: 1024px
             height: 400px
             margin: 20px 0px
             aspect-ratio: 4/3
+            .hover__title
+                font-size: $m
+         
 
 
 // Media Queries SMALL DEVICES
@@ -220,11 +227,15 @@ $breakpoint-small: 768px
 
         .projets__section
             .projets__intro
-                margin: 50px 50px 0px 50px
+                margin: 30px 50px 0px 50px
                 text-align: center
                 color: $primary-color
-                font-size: $s
-
+                p 
+                    font-size: $xs
+                hr
+                    margin-top: 10px
+                    margin-bottom: 120px
+                
             .projet__pic__container  
                 width: 90%
                 height: auto
@@ -233,14 +244,23 @@ $breakpoint-small: 768px
                 img
                     object-fit: cover
 
+                .hover__title
+                    margin-top: 10px
+                    font-size: $s 
+                
+                .hover__link
+                    button
+                        font-size: $xxs
+                        
             .projet__technologies__container
                     padding: 10px
                     .projet__technologies
                         flex-wrap: wrap
                         gap: 35px
                     .hover__technologies
-                        height: 70%
-                        top: 30%
+                        height: 68%
+                        top: 32%
+                        flex-wrap: wrap
                         p 
                             font-size: 0.8em
                             font-weight: 300 

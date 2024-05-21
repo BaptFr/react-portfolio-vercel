@@ -1,15 +1,15 @@
 import React from 'react';
-import reactLogo from '../../assets/logos/react-logo.png';
-import sassLogo from '../../assets/logos/sass-logo.png';
-import jsLogo from '../../assets/logos/js-logo.png';
-import htmlLogo from '../../assets/logos/html-logo.png';
-import cssLogo from  '../../assets/logos/css-logo.png';
-import nodeJsLogo from '../../assets/logos/node-logo.png';
-import expressLogo from '../../assets/logos/express-logo.png';
-import mongodbLogo from '../../assets/logos/mongo-logo.png';
-import githubLogo from '../../assets/logos/github-logo.png';
-import figmaLogo from '../../assets/logos/figma-logo.png';
-import postmanLogo from '../../assets/logos/postman-logo.png';
+import reactLogo from '../../assets/logos/react-logo.webp';
+import sassLogo from '../../assets/logos/sass-logo.webp';
+import jsLogo from '../../assets/logos/js-logo.webp';
+import htmlLogo from '../../assets/logos/html-logo.webp';
+import cssLogo from  '../../assets/logos/css-logo.webp';
+import nodeJsLogo from '../../assets/logos/node-logo.webp';
+import expressLogo from '../../assets/logos/express-logo.webp';
+import mongodbLogo from '../../assets/logos/mongo-logo.webp';
+import githubLogo from '../../assets/logos/github-logo.webp';
+import figmaLogo from '../../assets/logos/figma-logo.webp';
+import postmanLogo from '../../assets/logos/postman-logo.webp';
 
 import './logos-banner.sass'
 

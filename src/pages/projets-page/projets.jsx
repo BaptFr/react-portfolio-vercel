@@ -17,6 +17,7 @@ import  PostmanLogoC  from '../../assets/logos/postman-logo-col.svg';
 import  ChromeLogoC  from '../../assets/logos/chrome-logo-col.svg';
 import  LighthouseLogoC  from '../../assets/logos/lighthouse-logo-col.svg';
 import  GitLogoC  from '../../assets/logos/github-logo-col.svg';
+import  WaveLogoC from '../../assets/logos/wave-logo-col.svg';
 
 import './projets.sass';
 
@@ -35,6 +36,8 @@ function Projets() {
         <SectionBanner title="Mes projets" />
       </div>
       <div className='projets__intro'>
+        <p>Avant tout, ce portfolio est une Single Page Application React JS. <br/>   Il illustre donc aussi mes compétences en développement front-end. </p> 
+        <p>Voici trois projets supplémentaires offrants un aperçu de mes réalisations.  </p>
         <p className='intro__animation'>
           <Typewriter 
             words= {[ 'Front-end / Back-end / Optimisation SEO'  ]}
@@ -44,11 +47,12 @@ function Projets() {
             typeSpeed={120}
           />
         </p>
-        <br/>
-        <p>Bienvenue sur la page des projets </p>
-        <p>Voici trois projet offrants un aperçu de mes réalisations </p>
-        
+
         <hr/> 
+        
+       
+        <br/>
+        
         
       </div>
 
@@ -79,7 +83,7 @@ function Projets() {
               <p> {projetId1.title}</p>
             </div>
             <div className='hover__link'>
-              <a href='{projetId1.link}' target='_blank' rel='noopener noreferrer'>
+              <a href={projetId1.link} target='_blank' rel='noopener noreferrer'>
                 <button>LIEN VERS LE SITE</button>
               </a>
             </div>
@@ -114,7 +118,7 @@ function Projets() {
               <p> {projetId2.title}</p>
             </div>
             <div className='hover__link'>
-              <a href='{projetId1.link}' target='_blank' rel='noopener noreferrer'>
+              <a href={projetId2.link} target='_blank' rel='noopener noreferrer'>
                 <button>LIEN VERS LE CODE BACK-END</button>
               </a>
             </div>
@@ -128,17 +132,20 @@ function Projets() {
           <div className='projet__technologies__container'>
             <div className='hover__technologies'>
               <p>DEV CHROME TOOLS </p> 
-              <p> LIGHT HOUSE </p> 
+              <p> LIGHT HOUSE </p>
+              <p> WAVE </p>
               <p> GITHUB </p>
             </div>
               <p className='projet__technologies__title'>TECHNOLOGIES & OUTILS</p>
               <div className='projet__technologies'>
                 <LogoColor src={ChromeLogoC} alt='dev-chrome-tools' size="small" />
                 <LogoColor src={LighthouseLogoC} alt='lighthouse-symbol' size="small" />
+                <LogoColor src={WaveLogoC } alt='git-symbol'size="small" /> 
                 <LogoColor src={GitLogoC} alt='git-symbol'size="small" /> 
               </div>
           </div>
         </div>
+
         <div className='projet__pic__container'>
           <img src={NinaPic} alt={'site-photographe'} loading="lazy"/>
           <div className='hover__content'>
@@ -146,8 +153,11 @@ function Projets() {
               <p> {projetId3.title}</p>
             </div>
             <div className='hover__link'>
-              <a href='{projetId1.link}' target='_blank' rel='noopener noreferrer'>
-                <button>LIEN VERS LE RAPPORT</button>
+              <a href={projetId3.link} target='_blank' rel='noopener noreferrer'>
+                <button>LIEN VERS LE SITE AVANT OPTIMISATION</button>
+              </a>
+              <a href={projetId3.doc} target='_blank' rel='noopener noreferrer'>
+                <button>LIEN VERS LE RAPPORT D'INTERVENTION</button>
               </a>
             </div>
           </div>       

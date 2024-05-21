@@ -30,9 +30,7 @@ p
 
         .introduction__text
             width: 50%
-            font-size: $m
-            line-height: 1.4
-            color: $primary-color
+            +intro-text
 
         .introduction__picture
             width: 250px
@@ -43,14 +41,18 @@ p
             align-items: center
             border: 2.5px solid $second-color
             box-shadow: 0px 2px 50px #000000
-            border-radius: $Bm
+            border-radius: 70px 20px 70px 20px
             background-color: $primary-color
             overflow: hidden  
             opacity: 0.8     
 
             img
                 width: 105%
-                object-fit: cover 
+                object-fit: cover
+            img:hover
+                transform: scale(0.95)
+        .introduction__picture:hover
+            opacity: 0.95   
                 
     .links__section
         .links__perso
@@ -90,10 +92,11 @@ p
             top: 0
             left: 0
             width: 78%
-            height: 100%
+            height: $full
             border-radius: $Bl
             background-image: url('../../assets/year-pic.webp')
             background-position: center
+        
             
         .formation__content
             width: $full
@@ -110,6 +113,8 @@ p
                 margin-bottom: 5px
                 border: 2px solid $primary-color
                 border-radius: 15px
+            img:hover
+                transform: scale(1.1)
             p   
                 font-size: $l
                 font-weight: 400
@@ -145,7 +150,7 @@ p
 
         .redirection__link
             max-width: 1440px
-            width: 100%
+            width: $full
             height: 500px
             +flex-column-center 
             border: 1.5px solid $second-color
@@ -219,7 +224,14 @@ $breakpoint-medium: 1024px
             width: 200px
             height: 250px
             img 
-                transform: translate(0px, 25px)
+                 transform: translate(0px, 25px)
+            img:hover
+                transform: translate(0px, 20px)
+        .introduction__picture:hover
+            opacity: 0.9   
+              
+                
+
             
     .links__section
         .links__perso
@@ -249,6 +261,11 @@ $breakpoint-small: 768px
                 margin-top: 25px
                 font-size: $s
                 font-weight: 350
+            
+            .introduction__picture
+                width: 150px
+                height: 180px
+               
         
         .links__section
             .links__perso
