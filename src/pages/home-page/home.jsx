@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink} from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
+import { Link as ScrollLink } from 'react-scroll';
 
 import SectionBanner from '../../components/banners/section-banner.jsx';
 import LogosBanner from '../../components/banners/logos-banner.jsx';
@@ -57,17 +58,17 @@ function Home() {
 
     { /*Section de liens globaux */}
     <section className='links__section'>
-      <div className='links__perso'>
+      <div className='links__container'>
         <div className='links__button_container'>
-          <a href='#formation__section'> 
+          <ScrollLink to='formation__section' smooth={true} duration={600}>
             <ButtonLink source={FormationLogo}/>
-          </a>
+          </ScrollLink>
           <p>Formation</p>
         </div>
         <div className='links__button_container'>
-          <a href='#skills__section'> 
+          <ScrollLink to='skills__section' smooth={true} duration={550}>
             <ButtonLink source={SkillsLogo}/>
-          </a>
+          </ScrollLink>
           <p>Compétences</p>
         </div>
         <div className='links__button_container'>
@@ -90,7 +91,7 @@ function Home() {
       <div className='formation__banner'>
         <SectionBanner  title="FORMATION" id='formation'/>
       </div>
-      <div className='formation__background'>
+      <div className='content__background'>
         <div className='formation__content'>
             <img src={OcrLogo} alt='openclassrooms' loading="lazy"/>
             <p>- DÉVELOPPEUR WEB -</p>
@@ -100,7 +101,6 @@ function Home() {
       </div>
     </section>
 
-    { /*Section TACKS & SKILLS*/}
     <section id='skills__section' className='skills__section'>
       <div className='skills__banner'>
         <SectionBanner  title="COMPÉTENCES" id='skills'/>
@@ -110,6 +110,13 @@ function Home() {
           <Tableau categories={categories} />
         </div>
         <LogosBanner />
+        <div className='skills__hover__content'>
+          <div className='hover__link'>
+            <a href={"https://drive.google.com/file/d/1GjDFHyKeIEbfsTedxIF-Muc4dIwN8heO/view?usp=sharing"} target='_blank' rel='noopener noreferrer'>
+              <button >VOIR L'ARBRE DE COMPÉTENCES</button>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -118,13 +125,13 @@ function Home() {
       <div className='redirection__banner'>
         <SectionBanner  title='PROJETS'/>
       </div>
-      <div className='redirection__link' id='redirection__projet'>
-        <div className='redirection__button'>
-          <NavLink to='/projets' >
-            <p>VOIR LES PROJETS</p>
-          </NavLink>
+        <div className='redirection__link' id='redirection__projets'>
+          <div className='redirection__button'>
+            <NavLink to='/projets' >
+              <p>VOIR LES PROJETS</p>
+            </NavLink>
+          </div>
         </div>
-      </div>
     </section>
 
     { /*Section LIEN CONTACT*/}

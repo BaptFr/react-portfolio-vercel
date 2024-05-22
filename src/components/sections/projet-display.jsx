@@ -19,6 +19,7 @@ function ProjetDisplay ({ projetId }){
           </div>
           <div className='projet__missions__container'>
             <p className='projet__missions__title'>DESCRIPTION</p>
+            <p className='projet__missions'> {projet.description}</p>
             <p className='projet__missions'> {projet.mission}</p>
           </div>
         </div>

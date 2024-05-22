@@ -18,9 +18,10 @@ ul, li
         padding: 0px 100px
         display: flex
         flex-direction: row 
-        justify-content: space-around
+        justify-content: center
         align-items: flex-start
-        flex-wrap: no-wrap
+        flex-wrap: wrap
+       
    
         &__card 
             margin: 10px 
@@ -36,7 +37,7 @@ ul, li
         .ant-card-head  
             margin: 0
             text-align: center
-            font-size: 4em
+            font-size: $xl
             font-weight: 400
             color: $primary-color
             text-shadow: 0px 0px 1px $primary-color
@@ -45,7 +46,7 @@ ul, li
             margin: 0
             padding: 0
             +flex-column-center
-            font-size: $xl
+            font-size: $l
             font-weight: 350
             color: #FFFFFF
 
@@ -80,6 +81,7 @@ $breakpoint-medium: 1024px
             ul
                 flex-direction: row
                 gap: 25px
+                font-size: $m  
 
 
      
@@ -91,14 +93,17 @@ $breakpoint-small: 768px
         .tableau
             &__card
                 width: 90%
-                padding: 5px
-
+               
             .ant-card-head  
-                font-size: $l  
-            ul
-                flex-direction: row
-                gap: 15px
-                font-size: $s  
+                font-size: $l
+                padding: 0
+               
+            ul  
+                word-wrap: break-word
+                flex-direction: column
+                text-align: center
+    
+                font-size: $m  
 
 
 

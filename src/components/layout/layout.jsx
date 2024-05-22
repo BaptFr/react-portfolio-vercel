@@ -2,13 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { NavLink, useLocation } from 'react-router-dom';
 import './layout.sass';
+import ScrollToTopButton from '../buttons/button-scroll.jsx';
 import logoCopyright from'../../assets/logos/copyright-white.svg';
 
 function Layout({ children }) {
 
     const location = useLocation();
     return (
-        <>
+        <>  
+            <div id='top'></div>  {/*Div pour le scroll */}
+
             <header>    
             <div className='header__title'>     
             </div>
@@ -31,18 +34,19 @@ function Layout({ children }) {
             </motion.div>
             </header>
 
-
             <main>
                 {children}
             </main>
 
-
             <footer>
                 <div className='footer__containt'>
-                    <p> Tous droits réservés </p> 
+                    <p> Tous droits réservés </p>
+                    <p> Baptiste Salazar </p> 
                     <p><img src={ logoCopyright } alt="Logo-copyright" /> 2024  </p>
                 </div>
             </footer>
+
+            <ScrollToTopButton />
         </>
     );
 }

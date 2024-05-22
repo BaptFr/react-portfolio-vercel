@@ -55,7 +55,7 @@ p
             opacity: 0.95   
                 
     .links__section
-        .links__perso
+        .links__container
             min-width: 300px
             margin: 50px 0px 150px 0px
             padding: 15px
@@ -67,6 +67,7 @@ p
             background-color: $third-color
 
             .links__button_container:hover
+                cursor: pointer
                 transform: scale(1.1)
                 p
                     text-shadow: 0px 0px 5px $second-color
@@ -88,12 +89,9 @@ p
         hr
             width: 190px
 
-        .formation__background
-            top: 0
-            left: 0
+        .content__background
+            +img-background
             width: 78%
-            height: $full
-            border-radius: $Bl
             background-image: url('../../assets/year-pic.webp')
             background-position: center
         
@@ -106,7 +104,7 @@ p
             border: 2px solid $second-color
             border-radius: $Bl
             box-shadow: 1px 2px 8px $second-color
-            background-color: rgba(0, 0, 0, 0.75)
+            background-color: rgba(0, 0, 0, 0.8)
             color: $primary-color
             img
                 width: 150px
@@ -116,8 +114,8 @@ p
             img:hover
                 transform: scale(1.1)
             p   
-                font-size: $l
-                font-weight: 400
+                font-size: $xl
+                font-weight: 550
    
       
     .skills__section
@@ -129,8 +127,9 @@ p
         gap: 0px
         hr
             width: 230px
-     
+      
         .skills__content
+            position: relative
             padding-bottom: 20px
             width: 90%
             +flex-column-center 
@@ -139,14 +138,54 @@ p
             border-radius: $Bl
             box-shadow: 1px 2px 8px $second-color
             background-color: $third-color
-                  
 
+
+
+            .skills__hover__content
+                position: absolute
+                width: $full
+                height: $full
+                top: 0
+                left: 0
+                display: none
+                flex-direction: column
+                justify-content: center
+                align-items: center 
+                background-color: rgba(0, 0, 0, 0.9)
+                +border-second-color
+                font-size: $s
+                border-radius: 30px
+                z-index: 1
+            
+            &:hover .skills__hover__content 
+                display: flex
+
+            .hover__link
+                padding: 30px 
+                +flex-column-center
+                gap: 25px
+
+                button
+                    opacity: 1
+                    padding: 30px 
+                    text-align: center
+                    +border-second-color
+                    border-radius: 10px
+                    font-size: $l
+                    box-shadow: 0px 0px 10px $primary-color
+                    background: #000000
+                    color: $primary-color
+                    font-family: $f-family
+                    cursor: pointer
+                button:hover
+                    transform: scale(1.1)
+        
+     
     .redirection__section
         width: 90%
         margin-top: 150px
         +flex-column-center 
         background-color: transparent
-  
 
         .redirection__link
             max-width: 1440px
@@ -156,7 +195,7 @@ p
             border: 1.5px solid $second-color
             border-radius: $Bxl
             box-shadow: 1px 2px 8px $second-color
-            background-color: $third-color
+            
                
             .redirection__button
                 width: 25%
@@ -180,17 +219,20 @@ p
 
             .redirection__button:hover
                 cursor: pointer
-             
                 transform: scale(1.05)
             .redirection__button:active
                 transform: scale(0.9)
                 box-shadow: 4px 4px 40px $primary-color
+                opacity: 0.5
 
-
-#redirection__projet
-    //background-image: url('../../assets/fond-2.webp')
+#redirection__projets
+    background-image: url('../../assets/fond-2.webp')
+    background-position: center
+    background-size: cover
 #redirection__contact
-   // background-image: url('../../assets/fond-1.webp')
+   background-image: url('../../assets/fond-1.webp')
+   background-position: center
+   background-size: cover
     
 #bottom__section
     margin-bottom: 100px
@@ -229,18 +271,21 @@ $breakpoint-medium: 1024px
                 transform: translate(0px, 20px)
         .introduction__picture:hover
             opacity: 0.9   
-              
-                
 
-            
     .links__section
-        .links__perso
+        .links__container
             margin: 30px 0px 150px 0px
             gap: 40px
 
     .formation__section
             .formation__background
                 background-size: cover
+    .skills__section
+        .skills__content
+            .skills__hover__content
+                .hover__link
+                    button  
+                        font-size: $l
     
     
 
@@ -268,7 +313,7 @@ $breakpoint-small: 768px
                
         
         .links__section
-            .links__perso
+            .links__container
               +flex-column-center
               p
                 font-size: $l
@@ -283,7 +328,19 @@ $breakpoint-small: 768px
                 p
                     font-size: $s
                     font-weight: 350
-        
+        .skills__section
+            .skills__content
+                .skills__hover__content
+                    .hover__link
+                        padding: 50px
+                        button
+                            padding: 20px 
+                            font-size: $l
+                            text-wrap: wrap
+                        button:hover
+                            transform: none
+
+    
         .redirection__section
             .redirection__link
                 height: 400px

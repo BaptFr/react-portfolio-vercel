@@ -1,0 +1,38 @@
+@import '../../style/variables-mixins.sass'
+
+.scroll-to-top 
+    position: fixed
+    bottom: 20px
+    left: 30px
+    border: none
+    padding: 8px 15px
+    border-radius: $Bs
+    background-color: $second-color
+    color: $primary-color
+    font-size: 1.8em
+    font-family: $f-family
+    font-weight: 500
+    z-index: 1000
+    transition: background-color 0.3s ease
+    cursor: pointer
+    opacity: 0.5
+
+
+.scroll-to-top:hover 
+    transform: scale(1.1)
+    opacity: 1
+    
+    
+    
+// MEDIA QUERIES //
+// Media Queries MEDIUM DEVICES
+$breakpoint-medium: 1024px
+@media screen and (max-width: $breakpoint-medium)
+    .scroll-to-top 
+        font-size: $xs
+
+// Media Queries SMALL DEVICES
+$breakpoint-small: 768px
+@media screen and (max-width: $breakpoint-small)
+     .scroll-to-top 
+        font-size: 0.8em

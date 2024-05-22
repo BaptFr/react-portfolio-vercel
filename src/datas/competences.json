@@ -6,9 +6,7 @@
       "competences": [
         { "nom": "React" },
         { "nom": "Sass"},
-        { "nom": "JS" },
-        { "nom": "CSS"},
-        { "nom": "HTML"}
+        { "nom": "HTML, CSS, JS" }
       ]
     },
     {
@@ -24,8 +22,16 @@
       "competences": [
         { "nom": "GitHub" },
         { "nom": "Postman"},
-        {"nom" : "Wave"},
         { "nom": "Figma"}
+      ]
+    },
+    {
+      "titre": "TRAVAIL COLLECTIF",
+      "competences": [
+        { "nom": "Développement Agile" },
+        { "nom": "Peer-programming"},
+        { "nom": "Méthode Scrum"},
+        { "nom": "Méthode Kanban"}
       ]
     }
   ]

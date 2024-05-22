@@ -16,7 +16,7 @@
     {   
         "id": "2",
         "title": "Mon Vieux Grimoire",
-        "description": "Site web de référencement de livres d'une chaine de librairies permettant aux utilisateurs d'ajouter des livres et de les évaluer",
+        "description": "Site web de référencement de livres d'une chaine de librairies permettant aux utilisateurs d'ajouter des livres et de les évaluer.",
         "images": [
             {
               "source": "../assets/mvg-site.jpg",
@@ -29,7 +29,7 @@
     {   
         "id": "3",
         "title": "Photographe Nina Carducci",
-        "description": "Site présentant le travail d'une photogrraphe via un portfolio",
+        "description": "Site présentant les prestations et le portfolio d'une photographe.",
         "images": [
             {
               "source": "../assets/nina-car-site.jpg",

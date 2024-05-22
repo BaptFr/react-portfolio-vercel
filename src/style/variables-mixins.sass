@@ -5,10 +5,13 @@ $f-family: "Yanone Kaffeesatz", sans-serif
 $primary-color: #FFFFFF
 $second-color: #DEB992
 $third-color: #010B13
+$black: #000000
 
 $full: 100% 
 $semi : 50%
 
+
+//Fton sizes
 $xxs: 0.5em
 $xs: 1em
 $s: 1.5em
@@ -85,6 +88,8 @@ $logoL: 150px
     justify-content: $justify
     align-items: $align
 
+
+//Border 
 = border-second-color ($width: 1px, $style: solid, $color: #DEB992)
   border: $width $style $color
 
@@ -93,3 +98,12 @@ $logoL: 150px
     line-height: $line
     color: $color
 
+= img-background ($height: $full, $top: 0, $left: 0, $border: $Bl)
+    top: $top
+    left: $left
+    height: $height
+    border-radius: $border
+
+
+
+  
