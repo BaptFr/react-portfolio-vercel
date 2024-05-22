@@ -14,7 +14,9 @@ import FormationLogo from '../../assets/logos/graduation-logo-col.svg';
 import SkillsLogo from '../../assets/logos/skills-logo-col.svg';
 import OcrLogo from '../../assets/logos/ocr-logo.webp';
 
-import IntroPic from '../../assets/photo-profil.webp';
+import IntroPicL from '../../assets/photo-profil-l.webp';
+import IntroPicM from '../../assets/photo-profil-m.webp';
+import IntroPicS from '../../assets/photo-profil-s.webp';
 
 import competencesData from '../../datas/competences.json';
 import './home.sass';
@@ -24,6 +26,8 @@ function Home() {
 
   return (
   <div className='home__container'>
+
+    { /* ANIMATION */}
     <div className='home__animation'>
       <Typewriter 
         words= {[ 'Baptiste Salazar'  ]}
@@ -33,12 +37,12 @@ function Home() {
         typeSpeed={200}
       /> 
     </div>
- 
+
+    { /*INTRO*/}
     <section className='introduction__section'>
-      
       <div className='introduction__text'> 
-        <p> Bienvenue sur mon portfolio ! </p>
-        <p>
+        <p> Bienvenue sur mon portfolio ! <br/>
+          <br/>
           Après une ancienne vie dans le commerce,  j'ai effectué une reconversion <br/> 
           professionnelle pour me plonger dans le développement web.  <br/>
           Explorez ici une sélection de projets qui témoignent de mon parcours, <br/>
@@ -49,14 +53,13 @@ function Home() {
         </p>
       </div> 
       <div className='introduction__picture' >
-        <img src={IntroPic} alt='visage'/> 
+      <img srcSet={`${IntroPicL} 1200w, ${IntroPicM} 768w, ${IntroPicS} 480w`} sizes='(max-width: 1200px) 100vw, 1200px' alt='visage' loading='lazy' />
       </div>  
     </section> 
       
 
-  
 
-    { /*Section de liens globaux */}
+    { /*LIENS DE SECTIONS */}
     <section className='links__section'>
       <div className='links__container'>
         <div className='links__button_container'>
@@ -101,6 +104,7 @@ function Home() {
       </div>
     </section>
 
+    { /* Section SKILLS & STACKS */}
     <section id='skills__section' className='skills__section'>
       <div className='skills__banner'>
         <SectionBanner  title="COMPÉTENCES" id='skills'/>

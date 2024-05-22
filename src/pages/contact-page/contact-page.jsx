@@ -12,10 +12,10 @@ function Contact() {
                 <SectionBanner title ='Me contacter' />
             </div>
             <div className='contact__page__text'>
-                <p> N'hésitez surtout pas à me contacter en remplissant le formulaire ou via LinkedIn et je vous répondrai dans les plus brefs délais !
+                <p> N'hésitez surtout pas à me contacter en remplissant le formulaire ou via LinkedIn et je vous répondrai dans les plus brefs délais!
                 </p>
             </div>
-            <a href={'https:www.linkedin.com/in/baptiste-salazar-15518a18b'} target="_blank" rel="noopener noreferrer">
+            <a href={'https://www.linkedin.com/in/baptiste-salazar-15518a18b'} target="_blank" rel="noopener noreferrer">
                 <ButtonLink source={LinkedinLogo} />
             </a>
             <div className='contact__container'>

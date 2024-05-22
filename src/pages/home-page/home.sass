@@ -92,7 +92,7 @@ p
         .content__background
             +img-background
             width: 78%
-            background-image: url('../../assets/year-pic.webp')
+            background-image: url('../../assets/year-pic-l.webp')
             background-position: center
         
             
@@ -225,12 +225,14 @@ p
                 box-shadow: 4px 4px 40px $primary-color
                 opacity: 0.5
 
+
+
 #redirection__projets
-    background-image: url('../../assets/fond-2.webp')
+    background-image: url('../../assets/fond-2-l.webp')
     background-position: center
     background-size: cover
 #redirection__contact
-   background-image: url('../../assets/fond-1.webp')
+   background-image: url('../../assets/fond-1-l.webp')
    background-position: center
    background-size: cover
     
@@ -240,8 +242,6 @@ p
 
 
 // MEDIA QUERIES //
-
-
 // Media Queries MEDIUM DEVICES
 $breakpoint-medium: 1024px
 @media screen and (max-width: $breakpoint-medium)
@@ -278,14 +278,19 @@ $breakpoint-medium: 1024px
             gap: 40px
 
     .formation__section
-            .formation__background
-                background-size: cover
+            .content__background
+                background-image: url('../../assets/year-pic-m.webp')
     .skills__section
         .skills__content
             .skills__hover__content
                 .hover__link
                     button  
                         font-size: $l
+
+#redirection__projets
+    background-image: url('../../assets/fond-2-m.webp')
+#redirection__contact
+   background-image: url('../../assets/fond-1-m.webp')
     
     
 
@@ -320,8 +325,10 @@ $breakpoint-small: 768px
     
         
         .formation__section    
-            .formation__background
+            .content__background
                 background-size: contain
+                background-image: url('../../assets/year-pic-l.webp')
+            
             .formation__content
                 img
                     margin-bottom: 25px
@@ -351,7 +358,10 @@ $breakpoint-small: 768px
                         p 
                         font-size: $xxs
 
-
+#redirection__projets
+    background-image: url('../../assets/fond-2-s.webp')
+#redirection__contact
+   background-image: url('../../assets/fond-1-s.webp')
 
         
    

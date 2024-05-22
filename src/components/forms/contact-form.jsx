@@ -56,9 +56,10 @@ function ContactForm () {
         <div className = 'contact__form__container'>
             <form onSubmit={handleSubmit} className = 'contact__form'>
                 <div className = 'contact__form__name'>
-                    <label>Votre nom:</label>
+                    <label htmlFor='name' className='sr-only'>Votre nom:</label>
                     <input
                         type="text"
+                        id='name'
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
@@ -67,9 +68,10 @@ function ContactForm () {
                     />
                 </div>
                 <div  className = 'contact__form__email'>
-                    <label>Votre email:</label>
+                    <label htmlFor='email' className='sr-only'>Votre email:</label>
                     <input
                         type="email"
+                        id='email'
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
@@ -79,8 +81,9 @@ function ContactForm () {
                     />
                 </div>
                 <div className = 'contact__form__message'>
-                    <label>Votre message:</label>
+                    <label htmlFor='message' className='sr-only'>Votre message:</label>
                     <textarea
+                        id='message'
                         name="message"
                         value={formData.message}
                         onChange={handleChange}

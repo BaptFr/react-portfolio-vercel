@@ -45,8 +45,7 @@ function Layout({ children }) {
                     <p><img src={ logoCopyright } alt="Logo-copyright" /> 2024  </p>
                 </div>
             </footer>
-
-            <ScrollToTopButton />
+            <ScrollToTopButton /> 
         </>
     );
 }

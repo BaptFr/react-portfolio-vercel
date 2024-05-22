@@ -5,9 +5,13 @@ import ProjetDisplay from  '../../components/sections/projet-display.jsx';
 import LogoColor from '../../components/logos/logo-color.jsx';
 import projetsData from '../../datas/projets.json'
 
-import  KasaPic from '../../assets/projets-pictures/kasa-site.webp';
-import  NinaPic from '../../assets/projets-pictures/nina-car-site.webp';
+import  KasaPicL from '../../assets/projets-pictures/kasa-site-l.webp';
+import  KasaPicM from '../../assets/projets-pictures/kasa-site-m.webp';
+import  KasaPicS from '../../assets/projets-pictures/kasa-site-s.webp';
 import  MvgPic from '../../assets/projets-pictures/mvg-site.webp';
+
+import  NinaPic from '../../assets/projets-pictures/nina-car-site.webp';
+
 import  ReactLogoC from '../../assets/logos/react-logo-col.svg';
 import  SassLogoC from '../../assets/logos/sass-logo-col.svg';
 import  NodeLogoC from '../../assets/logos/node-logo-col.svg';
@@ -77,7 +81,7 @@ function Projets() {
           </div>
         </div>
         <div className='projet__pic__container'>
-          <img src={KasaPic} alt={'site-kasa'} loading="lazy"/>
+          <img srcSet={`${KasaPicL} 1200w, ${KasaPicM} 768w, ${KasaPicS} 480w`} sizes='(max-width: 1200px) 100vw, 1200px' alt='site-kasa' loading='lazy' />
           <div className='hover__content' >
             <div className='hover__title'>
               <p> {projetId1.title}</p>
