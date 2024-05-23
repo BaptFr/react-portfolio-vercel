@@ -116,7 +116,7 @@ function Home() {
         <LogosBanner />
         <div className='skills__hover__content'>
           <div className='hover__link'>
-            <a href={"https://drive.google.com/file/d/1GjDFHyKeIEbfsTedxIF-Muc4dIwN8heO/view?usp=sharing"} target='_blank' rel='noopener noreferrer'>
+            <a href={"https://drive.google.com/file/d/1_jTCxFGzRbmM75Mbj8g_hI7Uft31ULvJ/view?usp=sharing"} target='_blank' rel='noopener noreferrer'>
               <button >VOIR L'ARBRE DE COMPÉTENCES</button>
             </a>
           </div>
