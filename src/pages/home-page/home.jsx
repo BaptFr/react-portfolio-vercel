@@ -34,7 +34,7 @@ function Home() {
         loop= {1}
         cursor
         cursorStyle='|'
-        typeSpeed={200}
+        typeSpeed={150}
       /> 
     </div>
 
@@ -53,7 +53,7 @@ function Home() {
         </p>
       </div> 
       <div className='introduction__picture' >
-      <img srcSet={`${IntroPicL} 1200w, ${IntroPicM} 768w, ${IntroPicS} 480w`} sizes='(max-width: 1200px) 100vw, 1200px' alt='visage' loading='lazy' style={{ maxWidth: '100%', maxHeight: '100vh' }} />
+      <img srcSet={`${IntroPicL} 1200w, ${IntroPicM} 768w, ${IntroPicS} 480w`} sizes='(max-width: 1200px) 100vw, 1200px' alt='visage' loading='lazy' style={{maxWidth: '150%', maxHeight: '100vh' }}  />
       </div>  
     </section> 
       
