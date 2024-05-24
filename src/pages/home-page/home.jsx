@@ -53,7 +53,7 @@ function Home() {
         </p>
       </div> 
       <div className='introduction__picture' >
-      <img srcSet={`${IntroPicL} 1200w, ${IntroPicM} 768w, ${IntroPicS} 480w`} sizes='(max-width: 1200px) 100vw, 1200px' alt='visage' loading='lazy' />
+      <img srcSet={`${IntroPicL} 1200w, ${IntroPicM} 768w, ${IntroPicS} 480w`} sizes='(max-width: 1200px) 100vw, 1200px' width='250px' height='380px'alt='visage' loading='lazy'  />
       </div>  
     </section> 
       
@@ -96,7 +96,7 @@ function Home() {
       </div>
       <div className='content__background'>
         <div className='formation__content'>
-            <img src={OcrLogo} alt='openclassrooms' loading="lazy"/>
+            <img src={OcrLogo} alt='openclassrooms' loading="lazy" width='150px' height='150px'/>
             <p>- DÉVELOPPEUR WEB -</p>
             <p> Formation certifiante RNCP</p>
             <p>Diplôme de niveau 5 (bac +2)</p>
