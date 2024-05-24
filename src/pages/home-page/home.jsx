@@ -53,7 +53,7 @@ function Home() {
         </p>
       </div> 
       <div className='introduction__picture' >
-      <img srcSet={`${IntroPicL} 1200w, ${IntroPicM} 768w, ${IntroPicS} 480w`} sizes='(max-width: 1200px) 100vw, 1200px' width='250px' height='380px'alt='visage' loading='lazy'  />
+      <img srcSet={`${IntroPicL} 1200w, ${IntroPicM} 768w, ${IntroPicS} 480w`} sizes='(max-width: 1200px) 100vw, 1200px' alt='visage' loading='lazy' style={{ maxWidth: '100%', maxHeight: '100vh' }} />
       </div>  
     </section> 
       
