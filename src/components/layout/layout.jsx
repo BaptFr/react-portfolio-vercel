@@ -10,7 +10,7 @@ function Layout({ children }) {
     const location = useLocation();
     return (
         <>  
-            <div id='top'></div>  {/*Div pour le scroll */}
+            <div id='top'></div>  {/*ScrollToTop div*/}
 
             <header>    
             <div className='header__title'>     

@@ -5,29 +5,30 @@ import './contact-form.sass';
 
 function ContactForm () {
 
-    // Stockage de la valeur des champs 
+    // Fields value stockage
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: ''
       });
-    // Chargement pendant l'envoi
+    // Send loading
     const [sending, setSending] = useState(false); 
 
-    // Etat selon les champs du formulaire
+    // States fields
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
       };
    
 
-    // Gestion du submit
+    // SUBMIT
     const handleSubmit = (e) => {
         e.preventDefault();
-            //Vérif validité du formulaire
+            //Check form validity
         if (e.target.checkValidity()) { 
 
             setSending(true);
+            //Env variables
             emailjs.send(
                 process.env.REACT_APP_EMAILJS_SERVICE_ID,
                 process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
